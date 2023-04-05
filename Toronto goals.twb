@@ -1,0 +1,3430 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='torGoals2018' inline='true' name='federated.0gzvt0304efb4p1abkc6h0p1rkct' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='torGoals2018' name='textscan.0n37knv0xja3nh17mwdpn02ynmuh'>
+            <connection class='textscan' directory='C:/Users/ketch/Downloads' filename='torGoals2018.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='2018Goals' name='textscan.0bs65g81efcf3x13apqzm078e7ep'>
+            <connection class='textscan' directory='C:/Users/ketch/Downloads' filename='2018Goals.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bs65g81efcf3x13apqzm078e7ep' name='2018Goals.csv' table='[2018Goals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='x' ordinal='1' />
+            <column datatype='real' name='y' ordinal='2' />
+            <column datatype='string' name='player' ordinal='3' />
+            <column datatype='string' name='secondaryType' ordinal='4' />
+            <column datatype='string' name='team' ordinal='5' />
+            <column datatype='string' name='strength' ordinal='6' />
+            <column datatype='integer' name='period' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bs65g81efcf3x13apqzm078e7ep' name='2018Goals.csv' table='[2018Goals#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='x' ordinal='1' />
+            <column datatype='real' name='y' ordinal='2' />
+            <column datatype='string' name='player' ordinal='3' />
+            <column datatype='string' name='secondaryType' ordinal='4' />
+            <column datatype='string' name='team' ordinal='5' />
+            <column datatype='string' name='strength' ordinal='6' />
+            <column datatype='integer' name='period' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>player</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>secondaryType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[secondaryType]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>secondaryType</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>strength</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[strength]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>strength</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>period</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[period]</local-name>
+            <parent-name>[2018Goals.csv]</parent-name>
+            <remote-alias>period</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='2018Goals.csv' datatype='table' name='[__tableau_internal_object_id__].[2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E]' role='measure' type='quantitative' />
+      <column caption='Period' datatype='integer' name='[period]' role='measure' type='quantitative' />
+      <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+      <column caption='Secondary Type' datatype='string' name='[secondaryType]' role='dimension' type='nominal' />
+      <column caption='Strength' datatype='string' name='[strength]' role='dimension' type='nominal' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+      <column-instance column='[player]' derivation='None' name='[none:player:nk]' pivot='key' type='nominal' />
+      <mapped-images>
+        <mapped-image caption='ozone' expression='file:///C:/Users/ketch/Downloads/ozone.jpg' name='[MappedImage1]'>
+          <mapping bottom='-50.0' left='100.0' right='0.0' top='50.0' x='[x]' y='[y]' />
+          <image-options show-entire-image='true' />
+        </mapped-image>
+      </mapped-images>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:player:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Adam Larsson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Alexander Steen&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Anthony Cirelli&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Blake Coleman&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Brayden McNabb&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Brian Dumoulin&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Carter Rowney&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Christian Wolanin&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Connor Murphy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;David Krejci&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dmitry Orlov&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Eric Fehr&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Filip Zadina&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Igor Ozhiganov&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jake Virtanen&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jay Beagle&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Joel Edmundson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jonny Brodzinski&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Joshua Ho-Sang&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kevin Shattenkirk&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Loui Eriksson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mark Borowiecki&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Matt Benning&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Max Jones&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mikael Granlund&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nathan MacKinnon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nikita Scherbak&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Oskar Lindblom&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Philippe Myers&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Robert Thomas&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ryan Murray&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Scott Mayfield&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;T.J. Oshie&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tomas Tatar&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tyler Johnson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Vladimir Tarasenko&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Zack Smith&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alex Killorn&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Andrew Cogliano&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Austin Watson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brandon Carlo&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brent Seabrook&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Calle Rosen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chris Kunitz&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Colin Wilson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Danny DeKeyser&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Derrick Pouliot&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dustin Byfuglien&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Evander Kane&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Greg McKegg&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jacob MacDonald&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jared McCann&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jesperi Kotkaniemi&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Johnny Gaudreau&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Josh Archibald&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kasperi Kapanen&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lars Eller&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Marco Scandella&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Martin Necas&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Matt Read&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Michael Raffl&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mirco Mueller&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mitchell Marner&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nick Paul&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Oliver Ekman-Larsson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Paul Byron&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Reilly Smith&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ryan Dzingel&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sam Reinhart&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Slater Koekkoek&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Timo Meier&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Trevor van Riemsdyk&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Victor Olofsson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Zach Aston-Reese&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Alexander Edler&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Andrew Shaw&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ben Harpur&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Brandon Pirri&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Brett Pesce&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Carl Grundstrom&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Christian Djoos&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Connor Brickley&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Darren Archibald&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Devon Toews&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Drew Doughty&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Eeli Tolvanen&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Filip Chlapik&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hampus Lindholm&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jake Gardiner&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jason Garrison&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Joe Morrow&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jonathan Ericsson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Josh Leivo&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kevin Fiala&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Leon Draisaitl&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Marcus Pettersson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mathieu Perreault&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mattias Ekholm&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Micheal Haley&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nate Schmidt&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nicklas Backstrom&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ondrej Palat&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pavel Zacha&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Riley Sheahan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ryan Hartman&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sammy Blais&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Steven Santini&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tomas Hertl&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ty Rattie&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Vincent Trocheck&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Zach Sanford&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Nikita Kucherov&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Adam Pelech&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Anders Bjork&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Anton Stralman&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bobby Ryan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Brendan Gallagher&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Brock Nelson&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cedric Paquette&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Claude Giroux&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Corey Perry&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Denis Gurianov&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dougie Hamilton&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Erik Gudbranson&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Frederik Gauthier&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;J.T. Brown&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jakub Voracek&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jean-Gabriel Pageau&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Johan Larsson&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jordan Kyrou&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Justin Faulk&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kris Russell&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Luke Glendening&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mark Scheifele&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Matt Dumba&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Maxime Lajoie&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mike Reilly&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Nic Petan&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Nikolaj Ehlers&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pat Maroon&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pierre-Luc Dubois&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ron Hainsey&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ryan Pulock&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sean Walker&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Taylor Fedun&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Travis Dermott&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Tyler Pitlick&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wayne Simmonds&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Adam Lowry&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Alexander Wennberg&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Anthony Duclair&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Blake Comeau&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Brayden Point&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Brian Gibbons&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Casey Cizikas&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Christoffer Ehn&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Conor Garland&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;David Pastrnak&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dominic Toninato&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Eric Staal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Frank Vatrano&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ilya Kovalchuk&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jakob Chychrun&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jay Bouwmeester&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Joel Eriksson Ek&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Joonas Donskoi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jujhar Khaira&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kiefer Sherwood&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lucas Wallmark&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mark Giordano&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Matt Calvert&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Max McCormick&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mike Green&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nazem Kadri&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nikita Zadorov&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Oskar Sundqvist&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Phillip Danault&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rocco Grimaldi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ryan Nugent-Hopkins&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sean Couturier&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tage Thompson&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tony DeAngelo&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tyler Lewington&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Vladislav Kamenev&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Zdeno Chara&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Adam Erne&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Alexander Kerfoot&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Andy Greene&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ben Hutton&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Brandon Saad&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Brett Ritchie&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Carl Gunnarsson&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Christian Dvorak&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Connor Brown&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Darren Helm&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dillon Dube&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Egor Yakovlev&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Filip Chytil&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Henrik Borgstrom&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jake Guentzel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jason Pominville&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Joe Pavelski&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jonathan Huberdeau&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Josh Mahura&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kevin Hayes&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lias Andersson&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Marcus Sorensen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mats Zuccarello&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mattias Janmark&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Miikka Salomaki&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nate Thompson&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Nico Hischier&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Oscar Fantenberg&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Peter Cehlarik&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Robby Fabbri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ryan Johansen&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Samuel Girard&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Steven Stamkos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tomas Hyka&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tyler Bertuzzi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vinni Lettieri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Zach Senyshyn&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Alex Goligoski&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Andrei Svechnikov&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Austin Czarnik&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Brady Skjei&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Brenden Dillon&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Caleb Jones&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chris Butler&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Colin Miller&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Daniel Carr&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Derek Stepan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Duncan Keith&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Evan Bouchard&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gavin Bayreuther&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jack Roslovic&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jamie Oleksiak&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jesper Bratt&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;John Tavares&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jori Lehtera&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kalle Kossila&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kyle Palmieri&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Marc Staal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Martin Hanzal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Matt Niskanen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Michael Frolik&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Milan Lucic&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Nick Jensen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Patrik Laine&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rasmus Dahlin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ryan Carpenter&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sam Bennett&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sheldon Dries&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tim Heed&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Trevor Lewis&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Valtteri Filppula&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Yannick Weber&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A.J. Greer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alex Ovechkin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Andrew Copp&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Boone Jenner&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Brandon Dubinsky&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Brett Connolly&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Calvin de Haan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Chris Tierney&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Colton Parayko&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dante Fabbro&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Deryk Engelland&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dylan DeMelo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Evgeni Malkin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Greg Pateryn&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jacob Trouba&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jared Spurgeon&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jesse Puljujarvi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jon Merrill&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Josh Bailey&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Keith Yandle&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lawrence Pilut&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Marcus Foligno&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mason Appleton&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Matt Roy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Michael Rasmussen&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Miro Heiskanen&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Nick Ritchie&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Oliver Kylington&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Paul LaDue&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Richard Panik&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ryan Ellis&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sam Steel&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sonny Milano&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;TJ Brodie&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Troy Brouwer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Victor Rask&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Zach Bogosian&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Aleksander Barkov&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Alex Formenton&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Andreas Johnsson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Artemi Panarin&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Brad Marchand&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Brendan Perlini&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;C.J. Smith&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Charlie Coyle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cody McLeod&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Damon Severson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Derek Grant&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Drew Stafford&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Erik Karlsson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Garnet Hathaway&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jack Eichel&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jamie Benn&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jeff Skinner&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;John Moore&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jordan Weal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Juuso Valimaki&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kyle Connor&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Madison Bowey&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Markus Nutivaara&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Matt Martin&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Michael Dal Colle&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mikko Koivu&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Noah Juulsen&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Patrick Marleau&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Radko Gudas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rudolfs Balcers&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ryan Suter&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Shea Theodore&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Thomas Chabot&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Travis Zajac&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tyson Jost&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;William Nylander&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Adam Gaudette&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Alexander Nylander&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Andy Welinski&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ben Lovejoy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Brandon Sutter&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Brett Seney&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Carl Hagelin&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Christian Fischer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Connor Carrick&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;David Backes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dion Phaneuf&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Elias Lindholm&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Filip Forsberg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ian Cole&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jake McCabe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jason Spezza&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Joe Thornton&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jonathan Marchessault&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Josh Manson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kevin Labanc&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Libor Hajek&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mario Kempe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Matt Bartkowski&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Max Comtois&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mika Zibanejad&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nathan Bastian&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nicolas Deslauriers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Oscar Klefbom&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Phil Kessel&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Robert Bortuzzo&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ryan Kesler&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Scott Harrington&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sven Andrighetto&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tomas Nosek&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tyler Bozak&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vinnie Hinostroza&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Zach Werenski&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Adrian Kempe&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Anders Lee&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Antti Suomela&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Boo Nieves&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Brendan Gaunce&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Brooks Orpik&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Chad Ruhwedel&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Clayton Keller&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Craig Smith&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Denis Malgin&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Drake Batherson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Erik Gustafsson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fredrik Claesson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;J.T. Compher&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jakub Vrana&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jean-Sebastien Dea&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;John Carlson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jordan Martinook&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Justin Schultz&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kurtis Gabriel&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Luke Kunin&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mark Stone&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Matt Grzelcyk&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Melker Karlsson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mikhail Sergachev&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nick Bjugstad&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nikolay Goldobin&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Patric Hornqvist&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pontus Aberg&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Roope Hintz&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ryan Reaves&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sebastian Aho&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Taylor Hall&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Travis Hamonic&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tyler Seguin&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Will Butcher&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Alan Quine&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Alex Chiasson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Andre Burakovsky&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Anze Kopitar&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Brendan Leipsic&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bryan Little&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Chandler Stephenson&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cody Ceci&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dale Weise&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dennis Cholowski&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Drake Caggiula&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Erik Haula&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Gabriel Bourque&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;J.T. Miller&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;James Neal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jeff Carter&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;John Hayden&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jordan Oesterle&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Justin Williams&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kyle Brodziak&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mackenzie MacEachern&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Markus Granlund&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Matt Irwin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Michael Amadio&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mikhail Vorobyev&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nick Bonino&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nino Niederreiter&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Patrice Bergeron&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Radek Faksa&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ross Johnston&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ryan Spooner&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Seth Jones&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Teddy Blueger&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Travis Konecny&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tyler Toffoli&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;William Carrier&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Alex Biega&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Alex Galchenyuk&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Andreas Martinsen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Artturi Lehkonen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Brad Richardson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Brendan Smith&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cal Clutterbuck&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Charlie McAvoy&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Colby Cave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dan Girardi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Derek Ryan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dryden Hunt&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Esa Lindell&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Garrett Wilson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jack Johnson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jamie McGinn&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jeremy Lauzon&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;John Quenneville&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jordie Benn&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kailer Yamamoto&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kyle Okposo&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Magnus Paajarvi&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Martin Frk&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Matt Nieto&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Michael Del Zotto&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mikko Rantanen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Noel Acciari&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Patrik Berglund&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rasmus Andersson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ryan Callahan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Saku Maenalanen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Shea Weber&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Thomas Vanek&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Trevor Daley&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Valentin Zykov&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Yanni Gourde&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Alex Iafallo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Andrew Agozzino&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Austin Wagner&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Brady Tkachuk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Brent Burns&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Calle Jarnkrok&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Chris Kreider&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Colin White&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Daniel Sprong&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Derick Brassard&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dustin Brown&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Evan Rodrigues&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gemel Smith&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jacob de la Rose&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jan Rutta&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jesper Fast&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Johnny Boychuk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Josh Anderson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Karson Kuhlman&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kyle Turris&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Marc-Edouard Vlasic&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Martin Marincin&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Matt Puempel&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Michael Grabner&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Miles Wood&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nick Leddy&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Oliver Bjorkstrand&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Patrik Nemeth&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Rasmus Ristolainen&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ryan Donato&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sam Gagner&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sidney Crosby&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tim Schaller&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Trevor Moore&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Zac Rinaldo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Alexandre Fortin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Anthony Mantha&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Blake Wheeler&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Brayden Schenn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Brock Boeser&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Casey Mittelstadt&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Christopher Tanev&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Conor Sheary&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;David Perron&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dominik Kahun&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Erik Cernak&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Frans Nielsen&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ivan Barbashev&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jakob Forsbacka Karlsson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jayce Hawryluk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Joel L&apos;Esperance&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jordan Eberle&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Justin Abdelkader&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Korbinian Holzer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lukas Radil&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mark Jankowski&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Matt Cullen&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Max Pacioretty&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mike Hoffman&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Morgan Rielly&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Neal Pionk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nikita Zaitsev&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;P.K. Subban&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Phillip Di Giuseppe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Roman Josi&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ryan O&apos;Reilly&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sean Kuraly&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tanner Pearson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Torey Krug&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tyler Motte&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Vladislav Namestnikov&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Zemgus Girgensons&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Tyler Myers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Adam Henrique&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Alexander Radulov&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Anthony Beauvillier&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ben Street&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Brandon Tanev&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Brian Boyle&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Carl Soderberg&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Christian Jaros&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Connor McDavid&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;David Kampf&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dmitrij Jaskin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Elias Pettersson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Filip Hronek&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ian McCoshen&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jake Muzzin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jason Zucker&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Joel Armia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jonathan Toews&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Josh Morrissey&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kevin Rooney&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Logan Couture&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mark Barberio&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Matt Beleskey&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Max Domi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mikael Backlund&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nathan Beaulieu&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nolan Patrick&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Oscar Lindberg&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Phil Varone&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Robert Hagg&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ryan McDonagh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Scott Laughton&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sven Baertschi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tomas Plekanec&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tyler Ennis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Vladimir Sobotka&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Zack Kassian&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alex Pietrangelo&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Andrew Ladd&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Auston Matthews&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Barclay Goodrow&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brandon Manning&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brett Howden&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cam Atkinson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chris Wagner&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Colton Sceviour&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Danton Heinen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Devante Smith-Pelly&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dylan Larkin&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Evgenii Dadonov&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gustav Forsling&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jaden Schwartz&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jason Demers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jimmy Vesey&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jonas Brodin&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Josh Brown&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kenny Agostino&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lawson Crouse&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Marcus Johansson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mathew Barzal&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Matthew Peca&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michal Kempny&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nick Foligno&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nick Schmaltz&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Olli Maatta&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Paul Stastny&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rickard Rakell&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ryan Getzlaf&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Sami Niku&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Stefan Noesen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tom Kuhnhackl&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Troy Stecher&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Viktor Arvidsson&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Zach Hyman&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Alec Martinez&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Alex DeBrincat&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Andreas Athanasiou&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Artem Anisimov&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Brad Hunt&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Brendan Lemieux&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bryan Rust&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Charles Hudon&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cody Eakin&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dalton Prout&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Derek Forbort&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Erik Johnson&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Gabriel Landeskog&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jaccob Slavin&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;James van Riemsdyk&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jeff Petry&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;John Klingberg&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jordan Staal&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Juuso Riikola&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kyle Clifford&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MacKenzie Weegar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Markus Hannikainen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Matt Luff&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Michael Bunting&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mikkel Boedker&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nick Cousins&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Noah Hanifin&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Patrick Kane&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Radim Simek&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rourke Chartier&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ryan Strome&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shayne Gostisbehere&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Teuvo Teravainen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Travis Sanheim&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tyson Barrie&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;William Karlsson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Adam McQuaid&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Alexandre Texier&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Antoine Roussel&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bo Horvat&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Braydon Coburn&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Brock McGinn&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Casey Nelson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Clark Bishop&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Corban Knight&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;David Savard&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Dominik Simon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Erik Condra&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Frederick Gaudreau&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ivan Provorov&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jakob Silfverberg&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jaycob Megna&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Joey Anderson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jordan Greenway&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Justin Braun&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kris Letang&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lukas Sedlak&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mark Pysyk&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Matt Duchene&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Max Veronneau&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mike Matheson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nic Dowd&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Niklas Kronwall&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Par Lindholm&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pierre-Edouard Bellemare&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Roman Polak&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ryan Poehling&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sean Monahan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Taro Hirose&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Travis Boyd&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Victor Hedman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Warren Foegele&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Aaron Ekblad&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alex Tuch&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Andrew Mangiapane&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ben Chiarot&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Brandon Montour&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Brett Kulak&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cam Fowler&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Chris Wideman&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Colton Sissons&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Darnell Nurse&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Devin Shore&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Dylan Strome&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Evgeny Kuznetsov&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Gustav Nyquist&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jake DeBrusk&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jason Dickinson&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Joakim Nordstrom&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jonathan Drouin&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Josh Currie&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kevin Connauton&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Leo Komarov&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Marcus Kruger&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mathieu Joseph&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Matthew Tkachuk&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Micheal Ferland&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nick Holden&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nick Seeler&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ondrej Kase&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pavel Buchnevich&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Riley Nash&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ryan Graves&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sami Vatanen&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Steven Kampfer&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tom Wilson&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Troy Terry&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vince Dunn&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Zach Parise&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkmenistan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='2018Goals.csv' id='2018Goals.csv_126B3B8C78FE4A81A524AD003911F20E'>
+            <properties context=''>
+              <relation connection='textscan.0bs65g81efcf3x13apqzm078e7ep' name='2018Goals.csv' table='[2018Goals#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='x' ordinal='1' />
+                  <column datatype='real' name='y' ordinal='2' />
+                  <column datatype='string' name='player' ordinal='3' />
+                  <column datatype='string' name='secondaryType' ordinal='4' />
+                  <column datatype='string' name='team' ordinal='5' />
+                  <column datatype='string' name='strength' ordinal='6' />
+                  <column datatype='integer' name='period' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='torGoals2018' name='federated.0gzvt0304efb4p1abkc6h0p1rkct' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gzvt0304efb4p1abkc6h0p1rkct'>
+            <column-instance column='[player]' derivation='None' name='[none:player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[secondaryType]' derivation='None' name='[none:secondaryType:nk]' pivot='key' type='nominal' />
+            <column caption='Player' datatype='string' name='[player]' role='dimension' type='nominal' />
+            <column caption='Secondary Type' datatype='string' name='[secondaryType]' role='dimension' type='nominal' />
+            <column-instance column='[x]' derivation='Sum' name='[sum:x:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[y]' derivation='Sum' name='[sum:y:qk]' pivot='key' type='quantitative' />
+            <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+            <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:player:nk]'>
+            <groupfilter function='member' level='[none:player:nk]' member='&quot;Alex Ovechkin&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:secondaryType:nk]'>
+            <groupfilter function='member' level='[none:secondaryType:nk]' member='&quot;Slap Shot&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:secondaryType:nk]</column>
+            <column>[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:player:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gzvt0304efb4p1abkc6h0p1rkct].[sum:y:qk]' field-type='quantitative' max='83.373212833629609' min='-84.454973578861939' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gzvt0304efb4p1abkc6h0p1rkct].[sum:x:qk]' field-type='quantitative' max='104.45341682924126' min='-63.374769583250291' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:player:nk]' />
+              <lod column='[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:player:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='520' />
+                <format attr='maxwidth' value='520' />
+                <format attr='minheight' value='863' />
+                <format attr='maxheight' value='863' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gzvt0304efb4p1abkc6h0p1rkct].[sum:x:qk]</rows>
+        <cols>[federated.0gzvt0304efb4p1abkc6h0p1rkct].[sum:y:qk]</cols>
+      </table>
+      <simple-id uuid='{C704C56E-D738-4E7C-97E8-D22DD66D0E70}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:player:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:player:nk]</field>
+            <field>[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:secondaryType:nk]</field>
+            <field>[federated.0gzvt0304efb4p1abkc6h0p1rkct].[none:strength:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{26B547C9-8942-4E58-A2B0-17E3635E655B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='240' name='Sheet 1' width='240'>
+      iVBORw0KGgoAAAANSUhEUgAAAPAAAADwCAYAAAA+VemSAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nOy9ebDl13Hf9+lzzu933zYz780MZsE2AIllAAIEuIAAKYKLQFIiKTKUKNKK
+      JZlW7ESRXXLspKwqOylXqlyuJK5KpWwrkcqRJYtSpFgLKVKUFIEbuAAEd2IlQAIDYDbMvr3t
+      3vs753T+6PP73fvevBkMyOFQhF+jHuYt9/62e/p097e7vy2qqqzLuqzLj6S4H/YFrMu6rMv3
+      LusKvC7r8iMsl1yBc86se+3rcillcXHxh30JPzC55AqsqusKvC6XVF7K623dhV6XdfkRlnUF
+      XpeXvDj30l3mL907W5d1KZJS+mFfwg9M1hV4XV7ysh4Dr8u6/AjLugu9LuuyLn8j5aIo8GDx
+      FEdPLQBw/PnneGLPfgBOHz3AY9959iXtwqzLuvww5ftW4Dxc5juPP8pzh07QLJ3kmSNLzHKS
+      pw8e54lnDnPF9DLf3nf6YlzruqzLuqyS8P0ewNWT7N59PY89P2AwWGJudhubt8Gxp/czM72d
+      2cs3sffhw+hVm0gpoap47y/Gtf9Iyp49TzM/v8Ctt9568WMzbf85u1hGROzPCiIF2BGQsw4i
+      7QvsJwWVcujxF6v97ez3r31hdgwpZ9Du+/bvovazrnlN5zj/+I/lvsrZVh1D7QUX4AiOzrP6
+      Kl68Fzl+HQqICrkcW7q/rbrW8ujHPz6R8gGs8WC+bwUel7qe4MyZE5yRSL1pB6cPH2L+yDJu
+      4xwiQgjhJQ3pX4g45zly5OgPJKzQsdWiquScTXFzJsaIambQHzI/f4alxUX6/WVSziwvLdHE
+      piiBs4WiIGPXKGt8d6F3oJJRlJB9eZ+tRpVVaibnPqI7x5+0vW9VQgg4hOFwgHjXncd5T055
+      zTevuVlc2K50zmOolI1IBVHFlb1DEVzZzDLtPqHdc1TNIELwAUFomgZEfrAKPFw+w6NPPMsg
+      wanLbmHHRuHQ8gQ337CN426ZPceG3HLT5u/3NC8ZCSHgQ9GQiyDjG4EtEm31j5QiiwuLPH9g
+      P88+u4e9zz3HieMnWFpaJMaEE484x+TkJEtLS+SU7L0rLJCMWdqV13yWVTz3RZKKcvYSNB68
+      KlmEjMNnRxIlixJ0bQU6l7VXKFZNERFmJqdpBgMGw6EpkXNs27GDI4cOrXlpax8zn8MAv7DH
+      JEAu6inqOm9GAHUZlxWnShRB8Z1Cg6LZbtI5z/T0FMNhw3A4pFVxWctfutT9wCklROQlDe2f
+      Tx56+JscO3aYN7/pHry3/VPkxWz5K0VViTHacZyp7tLiEvv27eOhb32Tp596isUzZ8g5kVUJ
+      PjAxOcnk5BRTUzNM9CaYmpqk1+ux3O8zuhSzkCmXtavmM/viYZ/Leq19kRBFSdpQJ0d8ej+6
+      9xmm73glS5tnkSg48WSn1AnUtVvFyOykXL4X6c7f+pmptbUi1N4zUVX0+/3itisbNm5k/sz8
+      hV8vmdEW26qHIEWBdey6dOwVqhlVcAIeU9DGgWqkHg7g4W8TlyLV624lTUwgaq/qrHAJazQr
+      ToTexAT9wcBCIlZuYiKmzhfVhV6XF5YmDchqu+yLlXPvtUqMiaXFRZ58/DG++pWvcOjwYZrY
+      EEJgw6Y5rrjiSq659hp27NzJ3NwcExMT5nI6sxLe+xKZ2eLMIsSsNDGTy3mDE+rgumW8lkVY
+      ++ogakJjosmw/LkH2XPfF9j97ncx8Z63kUNNjx4xCCFrt6EJpqwKNGqdbDlnnDjElbMrRFWS
+      WmjmncOXxe1EcCL0l5eZmJh40c8bTBkRMevYyei6MkrKmZxHIYsLjqAOp8KAiKQhbt9+Hvuz
+      v2Zq963sev/78RvnECgKXJ7jKIjvPgkFsipJlYDY9RTwYl2Bfwii4TRRTiKSEbmAxz8GTKGQ
+      tcS1Rd1AWTxzhkceeYQHH/wyx58/jDjH1Mw01778Zdzyylu5ate1TE3N4L0rymjLw7UagIA4
+      c0WLC5tQIpCdBXQCOG+K01qDC4oVW7BLAO9BhOlbb2Dzjq0cvfczXPPWu9BNW8m+WBfnWO2w
+      K6ZIznuyc6SUSSmjJT4U7/Bi99akRFTFOY93QsCRMyDF45PRcc/3vMtLLSBRi887qyxmoxWl
+      yZDU3GTnPd45VJRUQMOQPCEJx778FTh2mJ3v+GXc5BSIEJ0QOmM+cpPb7xAhazZ/oGwkqy91
+      XYEvsWRZxj6NC7PA44sta+5AwHbHf37fs3z63r9mz549qAvMbt3CK195O7e9+tVs2boF5wXB
+      oyqGbpaFJbTrxjaBpEoGgje3TtUcUxlb8N61ry8bSDERY6B1931nTMrvXVmEHhhMTbP57W/j
+      md//PQbfeRp3xzaSCL0sZCeIKOAMiCvnc4hlMJzDBYcqNGregSTFO7ENRgSSkrPa350Sxe7N
+      oSt2BQOHWus3etjafi+Qx+6rRYhzVpJmko5c9xACTspmle2Ok2QckE6f4eSnP8XMTTdQ33Ir
+      aA9F8bnEI9lOMK6eCSWnhFl78yQKVrfi2a4r8CUWkRK/XHDcOx5xjQrzlxeW+NqXv8wD93+O
+      paVFpjZs4FV33Mmr7ryLDRs24XCoC2RV/Nj7OzR3FEyham6g875zl2PKZBQVs4i+rGBZw40f
+      /1X7/YrfgVlxVbyDNNVj+sfuQv7soxz5q0+y/dZbydObzfrKqrSKdluNuex55D5WzpDmnHJJ
+      UTpwFgeTlUhmmDOLwwFhaooKh+sUVXF5TGnOsrwr7yEjRXkTMSd7hRO8OIJ3hi8ntfc48A0g
+      Ds3LLDz+CP1vP8P2f/j36G/cQFDoZfBq8X4uG0MLZjUx4TAAziH41pdetSnCugJfclkB8F6A
+      KGaFxsGL48eP8//9+Sf47hPfxnnh+t038da3v4OtO3aQXEVSQZwHFXyJ18bjq+7YYnF1QhFX
+      rJcIqQBe7cU6EYLzOC1xKcW1vOB7MMvvNBOAOtRwxZVsfd0dnL7/S1yx7wDxxjkGORLEoa51
+      oWXMQMq4GqOMfJjsPUkcTU6kZIh3LY7KeRyOQUlfZjJezN12CKtd0vYMbR69NdCqdHGucyXN
+      027E455I2VlUleQgS8YvLnDq0/fht2xm5q7XsxRqKnUWppSNvEWZU87EXEBeMXfclZ3kXM98
+      XYF/CPKiMGcFzQVIysrBffv56Ec/yuFDz9ObmuTuN72Zu+56A73JSTLCMGcikDA3zIsDVxBq
+      Q126AwtKVAOGfAiICEmUmHOJuQUPVM7jcxuGSbcHXLgPYf83a65MSyBPz7DlHT/B6c/cx9Ln
+      v8TGl+9Gg2OQG3y23K1QYm4F3wbSqmi5BykIuQNwphSaMwllqGaRgzhm6knEB1PClFASocTj
+      nWcxMvRobjcPCy1ithN673CugHjFZIq2z3LsflVpSHhV4p7nOPHgN5j9ybfCzqsILhAENJjy
+      t6FQLp9x8I7gAy5TilvGwMJxV6zIugL/UCSz5qdRZGVut+QHFZ7b8wx/+id/wvFjx9m0ZTPv
+      eu97uP76Gwi+BjX30HshZotfB5JRp2aJSnzWuuQUt1k760sHAmVVvPjyvtbywsrEyoVi0ODU
+      IJ9YLHwF5OCZuP5merfdyOH77mfju99HvmIO8Z6cKXlqU1rnnWFb5Zm1VtGV67A41FByEUfK
+      SsqJYYxk72iGQ6bqCu896hw5ZZqUECdU3lKa4lyHJbXpp5gSSRVx9hovJYRQKVE5q56EFo8p
+      4zThhw3HPvdlmhjZ+ta3EOselROETMqCUzGOOBTvzWMQFMkKuWwqbbxwjtXyn2cy9ocprb91
+      fiyUnLMtoJTRnNm7Zw//6ff/gFMnTnDlriv5L3/xF7nm5TcQsUVpMC04b98qGSUTSUSy5VHH
+      NwYRnDiCE4IvLpyaEisQxBPEmws+9h+MAWAXKCqCFrfV01pNgQ1T7HjHu1g+8iwL33yQ1ER8
+      Emrn6fkKB2hONDGSUklvtTiUQG4B6xZEU7OodVEGXyxcVIvnBcuv+hCoqgoFhikxSMk8l6yQ
+      Mikny63nTOUctfNUCAFBMi9QQiqgmZggHjrM6S/cx+bXvhJ/7Q04gVDSdqKgKnjnzeKKhTyq
+      xbW/wAe8rsA/FDm/8oJZ4dg0xGbI/r3P8cd/9J84s3CGK6++ip/94AfZefnl9Ho14qzyR52W
+      OuISr4oBLCjEnEiaV5y1W/ul7i8pxJKisve7lZfZxdHjqnyh0iKprbUyq9nvOSZvuZnJrTs5
+      /MlPIvNnyr3b9VXeFM2LEGNi2EQjRSyx6cgCln2xuJ2iQhBPHSqC98RmSNNEmpS6lJR3UPuA
+      x6MZYswMm0g/JkN3Q6Du1XjnRgqrBXxsd7CzHoIpZlCHT5GFr36Fhf2Hmf3xtzKc6uGdg6wl
+      fjdswSG4LDilfMnZ5zmPrCvwD0HaVMTZf2AVGiqcOXmav/jzj3Pi5HG2X7GT9/3s+5nbsqWA
+      KQ7vhKSJ1Jb/qS2Mqiw8xtIeuTvu2L9iUVZ7DMHe6wtAcwF7zQXe9MovUahUYfsW5t7xdk4+
+      /ijxu3vOWrNOhNoHqhAAoUnJwKrirraV/6Jqm5LSKYQvm5FtdI4mK8MYiSmi2Vz02pmngT06
+      suuyOt1n0G0QOrZ9ndeJEtyZkyx86j5mXv4yJl79WpIHkqWV/FoboJ5nX1j7EY7i/3W5hKJY
+      w8AaH1Ob98xYuqi/vMyn7r2X5w8cZNPcLO953/uY27IN52qceshWeQRixQ0F53FA6CyUFCXO
+      ZFYpsYilOhQr9i8pJ9eCMz/AKlsBKgWpJtn0xjdQ96Y5/pnPkofzJc6080sqMSFQBU8I3uL3
+      lEg5n73qx0AlUfBJmawmqIo1VlWG0TaBYRMZJtsKfNHYnDIxRYYxklKmBZFejM+hmhg++ihn
+      Hv0OG3/yrfi5zUz5unPrW1R59REvLLhaKesKfMlFLPl3XjHr8rWvfpVvP/Y4dT3BO9/9HnZc
+      cRXiK1Bvrm82MMWJIyvElMjJYj0vjtAWBxSDMUKXzY0za2NFDxSL5cV3Cvzi3OTz3vFZXwA4
+      oQo1vV1XM/e6Ozn+wAPIvgMWH45ZWFHwau6mL6GBEyHlTKOZJCNY0OqKCziHudRx0OBUCcFR
+      1ZV1xamQBJJTMhknUHtHL3hTdCgdXFo2FD3HfWiXdtK2sGOpz6lPfZG0ZZaNb7gL3xOCs06p
+      9n7a9yuWB87lHtr7WFuJi+sy9rWuwJdYCpRy9u9bo1NQyKOHDvPgAw+QU+auN/wYN958Cz7U
+      iLRpDIskRSEUi55K9VHbgODEUTKeqFrNcOwWSkbFUhgpZ0SKAl/CZ+HUSgVjPcHWe96Knllk
+      /v4H0ZxMKSWZGmq26ixVJJsLWuHw3pNQmhg7oKr1MKJA06LJeYiK4rKiKZFTwiEFP0h2DTFB
+      ygQHVXDU3lN5vwJrPkuKB5+ICIlGDDAbPruPE1/7Bpvf+FqqHVeQnWNl8m21B9b55y9611xX
+      4Esu59lf1crnFhfmue9Tn+L0qVPsuvYa3nD33fiqQr2QNBPJXYGSx2qafSkISLmU+BWrGko1
+      T1t4kFuESKyCqcmZhoyII5RUSlf4IfK9rKkLlly8Ea+eyetezszuGzn06c/SP/y8KVQ265fF
+      0OdcdrmSIbbywtb1zeb6Js0MncWzLreWEQOomkjMlD5ka/fz6ol4hlkYJljOYK3DYgBWAeDO
+      KpwrH6HHHKrGYWj50gKnHrifIYnNd7+eVPcIsWDvYuGThVCmegaoiZWCMgYunuuhlfOWj2dd
+      gX8oskbjeudSqfL000/x7ScfY3Kmx1ve9hYmZqZoUmSQIss5MhAlu5VbQVthZLUO1o/qEUKG
+      SnxXS5xyJGGIdFI1S+dKQ4C6tS7tByNa8t3Zcp9xboYtb7+H/rPPs/SNbyCDaKECqXMzO5yu
+      e2YGUtVVRQge55x1BMU23k8kbcg5E4aRXoKpDJNZmMgwGTNVHNBLQ+rc4MTMdtNAVMgi3TNe
+      HZ+2vUKCtRAORBBN+GOHOfr5L7LptltwN9xI8o6gamWeZ0nZSNYorV37Y1j5GhFdL+S49HKu
+      2VC2IPoLizzwxfsZxobbXvMarrxmV7dwrCXWaFkiVoUz6s0VKueJmroBcm3HkrnGUiJDc6W9
+      CKlchxeHx5Ui/EsjAoQsDKxQjOwrJl51G5M7dnDi3s+w4a430J/awqQoPmtJ+tL2UoyOU352
+      4pAAqCPFhDRLDJ/dy+HHnyAm5UTKXQti+/wVJRHxoWLHDbvx17+cgZvAA6k0RFQl3h53gh1t
+      k4UyENtgeirk3LDw5a8w2L+fK/7We2mmNoJTogp+vGliXNrKspJBOL/o6B/B+oZf9JM/3+E1
+      s2/Pkzz+1HNkVY4/v5eHv/1Ut1DWpc165LNdMuwD2bPnKfbt28umTXPccefrwQXLS3pPKCCO
+      ZCWmaPGejAAnB1ZYL0JT0GzEKqGCb/t4LVYeJiWX402Ix6fy4gtusvh+pfgcLpOdELSid/kO
+      Zn/8jSw+/h3S00/iUgJf0bL8jK7P/u0iyXZdqzX+L6Y+y995hkf+w/8LJ07Rm5yiipkwTCu+
+      qmFmehnc8dN863f/gKXHniDo0LqunIFTTY40ORElk72izuLc2HYjicdnR4gJf/oMx77wAFPX
+      XsH0a15FVdfUqmQ8iK79mat97qwC1Nf6FFb8rQ2RLuZHsnjiAGfSBjZzhO8emOT08yfYfdUU
+      Tzx3kldcs06rMy6GsI6SOqpK0zR842tfxzvPK297FXNbthFzKYAQ6AVv1UKUeBltSRxG9qGU
+      /rVlkpUITrSLtTRbVZYieO/wQOiaJdQqgdZKcFyoXo9jNeM/r5U2c+A0Ad7iwokeW95yN8c+
+      /uccu+8+dtx8OzkEkstIct1RtD2ujIA/gBQTMSXqqBz7zh4ue9nLuPzn38ep+QEzG2dt83Ou
+      Q+EVSKnBDxeZ+MvPsfTsPqZ2v9zqsEU6po9GM8OYreRSTdksB2/uscsZSPSf+C4nH32Cq3/h
+      p8nbLwOv9LI1V0SfCboGRFhuaMSMdb5nO/4aewAX1QKH3iTHDz7N/hNnOHPsINNT29i443LS
+      qZMd9UvOl9BP+5so0oIoYApjhHMpJY4dO8qhQ4fYsGGal9/0CpoQGKIsp0S/aSlxoApK7a1Q
+      vy2/E7XaWl9i39YaDTM0BnUREALmAnoRglgtcJtqapkS1/w6O4Ox9hfdrY0AlzW+2hc5NQI3
+      ggPtUV11NRvvvIUzn3+AdOiINSDAioObEpV1pIakD2M0MK7yBC/oyQNsuGIL4ifo1RN450lO
+      aHImqpWNJlGSBqg30dt5GfOLR6DUKFdA7cVyz+IQdcSspBLGiBjA1aWylvsc+/RnmJqcYvbu
+      N+HCFIGa5GrzFtSfHUx3z0joqD9f4NmOvqTzui6a1JNz3HHnHeyY28j2y3exuHiY0wcPEOY2
+      j5qe/zPlwhrJ6scuHYPks3ueQXDMbNrKZduuBGqyr1H15OzI2ZBTKThsm3dUMQocLUizdICW
+      oOSyyBScwztf4Et7TxZrom9zka1FW/nfudfeOb9WrslzHHG0FB3gnOAmJtlyz7vo9xMLX/ky
+      EhtctI1KRC315cx6x2zFHNat5Kl8RXDensVAqbdss2cnHhGPl9DVHbfFNMEH80JmZxgcO45o
+      Q3RCdh7UownEOUJw1M6VWu5Mk6wIJCEMFfrPPMfJr32LrW98Pb2rry256hI/y8pN62xIbKWc
+      /9nKiq+L6kKLKPv2PEnYuJNrL5tlg25l76mGV9wwezFP86Mtqox6+orjWtznJ777JI1Ebrzp
+      eiYrh3NKItM4y9zGnFFpXTcpzflji0CsBU5KPldLDyzZcs/iHc4JlYq1yGnbmWQWvNvqv6/7
+      W+XmoitaEM/zNkQgOqW+/gY2vOwKTn7qr5i7543EnTs6nisVYyaJqqCJ4BRx5nc4NX7p3AwY
+      nlmimpy00sXKGv87JepyyormxNBlfG8SOb6MLPfJU8nCjCZaKsk7KCm25ISUivut1vDgm8SJ
+      zz9AXDzDhje9Dq17IMamoYXKx8C2i4kF2d1cXAV2gRtuvq37eW77Vcxtv5hn+NEXh7WkGeUo
+      tKj08eNHeHbPs/SazPWb5sgnnseHHr1GCWLtcWSLb8WPfWyrUVkvXcWPpgZX+mJFHHjLCVcp
+      2xp2rcJ6zCsYEZh2fvWLlbYipb24YoUTJXc57kSLrth/zMIkWOqz/fZX8tQf/AnL93+F6o7b
+      SBNTFitqe4WC94XEo9yvJHBJ0flTNKfP4JcHyPOHyM0ybmKmA+i6XHfOkBxD3xAWlgkLDXrg
+      BCwNwFdmRV1XCgPO8sEuqym4JnLqw9EzHP/iF9n8squpNm8iHz1c+q/bXLp093dhz/Qciq5j
+      kXJ7L+u0spdWvv7on3P00DLv+PEPWA9uzgyHfb71rW/y0T/5I3YdO8nte4+yoxLmcyQtNlS1
+      t6ymZhKAs/yuXxEXjRZGt2Akl8IP+7lSSxnlbGwQSTJCMgZFPFbxZFHyiwKuiigth5R2xf8u
+      eCanphguL9M00RBl6SAzgBHxebGu0jRMDiNy6jjDDRtZnplGg+JKnWHbaNHi0CogWakShKzE
+      3EeXF8hTczQB5NW3Id98ZAxht/MW0iDUleqNpUX81CxOM1rVVJPTDPoDfMx41UJ3q+Qc7dpF
+      QD0uKxw7SJ6YIc5sQiRS+VJNUsIaSxG5C0T5z+Fat+cdk/U88CUWlzcR2uQtpc0Ox6EDBwkx
+      s+26G9l2+130nDDdq4nLQ3xZLFkoqYsWyDEj5koBRzFR1lJX1otiOWMrwLLqpVZ1EorkXDYA
+      11lIyx631tEWTJt/lRKzS3scHSkkQJb2d63bKIQqEFxgMOh3VDXd4VkDsNZMziAepnFsSpnk
+      tVN+VzwYa+wfUdKE46eY//gn6N14E/3bdlOHCXpSMZx01Luuo22oHFlCC0MajA3DiRAef5z0
+      6GPMvesnyJs2kVMs1VOUUGNUT5615RJzZBdJyeHUyAdcp6ytBS712VZpM3bD5qK0j7B9diPH
+      Ssae9eizg9K6+L0uxHX5HiVN410c/axmhQ8dPEiuA9ve8nqufM1deBdMGTt1aonWk7nTYwtB
+      MFDK3L22WH7EHZXVmtW1eD7BgahRz8RkC8Jh5XweS7N0FDwXIl3QW26pU3DGf1ni3DVSVCtM
+      vWm2dn6udR7FEj54Z0QEbcwumXanoHn6GZ770ue57I5XMv0Lf5uBD2QmyM08Wk0j4qwOvO36
+      ypkmD0hemZTARHb4T/4FZxbmmf7Z9xCuuhqcIhJKLrqoYumEUoyCSHMkBEeOmVy6ErzzOO+7
+      lFQLP40/j5FDf/bzbNODMAIEYzJ+7ZZ40OlFBrHW5YWl15tC88KK3zXDIWfOnKbyFZdtuRyk
+      IrUKLGYlCpML2TuyGJLsxDDRWBakquK8WOnkmHttXFHKsFhbdZ5AthSWYC52hhqh59qIT8b3
+      +tHFjpyHVSZ0pKCdArdKW66hPVZLV7vioEoHNKkUL8NJuWdl2NhgvJ4PhsGX6iUL1VucuwK1
+      JT2QisUwQSIgWpGtT9K6tkoDR0bphQlCFRgmIzPo+R5Nfwh4ct1DU8aL9SLj7NqHqUG9MGga
+      FKj8BE3OVHWFZivBHOqodlvEiPPr3NZvA3nsMa7xPMd5qJMYhtD4TMYX9hEj6FtX4Esss7Ob
+      eP7557ufRYR+v8/ycp/aBzZv3Ni5UC3NqMVOBjh55xCnpAhOtNRAQ8yRBrUaXozdMeA6UnUf
+      nNUI55Yo3OyJF6HJLXykhla3tuFc8Zqs+tdePPp11w0va7/0HFan9Rna+89QGDiEqvKW69UM
+      ztMShhgTTdmtvKBObYOjBhW8K5MRfEVuGwgQxFdIEAtP1EKIGqiWBvjlZUQySYxkjiQkEpKt
+      /DSCMXeSqasKso2syck2rrpM3Wg5tdomlYHaphSct5SZrvJWWjcaUHH2DERpStrK3GloqYFq
+      79cV+FLLwsI8tp+OpGkiMTaEukeoQhdnjnpWTNquIi/OBqSVdRuwUS0OZyV+2dJP7WtdccVb
+      BkZNinrzyyocnnb4mH7P4PPFlrZl0sLwgpaLlCqyhHOWB0fdaKqhZISMuMLQkROIYhkz28yc
+      2kgxMHqbSjOqlveNORFItPOKnAMXiy/ii5eQKeNdiqeRMpWv0JTsEp2DlCx37O3TM06yVBwF
+      ISWl5yxX/0IPQDWjORWXW/Eqtjk7h+T1ZoZLLouLSzg3ngZSmmZIShlf10ioSE6wZlXzrdqZ
+      sq3LqO3v2nVb/j/iwTJmxGFWvGRq50borwgJA7Y8Hq/Wnhf8qONntazylFd8PyrYaOP171da
+      x7/9aQRxeWcYQMyZ4Er3FAUeEmzUSgsKkcgEBjmjBGrxeBnzu9UKSmLBBRqBiWjIvrU5elQd
+      uTTNK67ovNI0VslW1ZN4sYo3aXmswD63nBFvBHtOhSiO6Fsoy/LPWZRQthMZe8jmNiua1EgN
+      KTE1lvAL4rvXryvwJZa6rjumB+cc6ozQG7RriWuXcLsg3Jgr25ZPOxgLoEavFQUvkMXRlGb1
+      QcoEtYKEtk66ydnoeKS4qblFjs9WwfY03aDv9peMY1flWnWtv53DbX4xUkIB51yZwoD9Ihd+
+      65iRJlIlh6pnwQ0YpoB3Hu8sjs42r8K6n1CLTHKwMl8SmgzYy85Bk4nDBkIbihTASjJ1HdCo
+      1uTQbiauKHBKVrwhLVGoUmGkC0MYMWQqNDkXYK7MzhhD5q2XmYJ1WA13VQJnRW2zlXUFvuSy
+      efNmDh8+vOq3rVmzBoMLWezdK8bj1OJ2Z6XMELIJg1oAG02GXktR2kSZ9NcinmPA11mX1xYR
+      dKMwRzOWgI6YXPyIsu3ie+LWZK+5zIgK2MS+HNDY2AhDhNz06TcJXwcqn8gxGzd1e6/Z3kdx
+      g1WUOimalsj9ZVStlzhkR8g29QGMcyymjEeoK2MEGQ4bq20IgagJH3xXSJNVSTHjvcWzxvvs
+      CguKgXIpZZJzXbmlUtgpU+lHdlZDbYVdvoBbpWY9ryvwJZeFBUOgWw4lU46Vr1d9o9kAACAA
+      SURBVBFZ9asLTefYgc06Z1AHtQjJOSvoKKwVFlvZ63ywqfGtuo3VYnWnbef1dhW4bRqjvNPe
+      0E55sIU6fs3fz/zj7rbsFFZJ5g2JzSV9lNWhwZOnJzmzeQPpS1/i8tfdycJNPQbeClNCxla8
+      WvhhMWwsbJ6eueWIf/ArHP7ER9DpaVKvsnQbjqZMTmxytnQdQiXWIVxXgUaMTD+rkpwgSc1l
+      94Y3NCnZxqxYDYCzTSHlZJtrzjjnaavEcwkHUlFqr3SoextOWf36OifWJZdWgdt0S2vyVi7y
+      7zGa1AJ6lBxnaiLNYEgcDslNQlI2FzcZnc5wOGQwaIhp1IyqLqMuE4lEbWi0sWKG0n9qi9SR
+      vKMxgLa4hEZPk5tESkbd2pLEt3nL70cECxucYtMiiqeiQCOJSMRv38qt/+C/IaQBB//lv2Dy
+      Lz/GlhPL+GwtgU02yM+7CnWORGZiMM/mpx9m+Ju/wXP/+79FZrdw3f/w3xGuvAoNtkXVCULK
+      qNpQMyctoKXWueQ8E1VNXVXkGHEiNCnSHwxL7l7JalcrmY7XK4gvc5ZG6DKFVD7mISn1aeIy
+      yQ9o6gFNNST7Idk3qA5Bm3ULfKmlruvu+/NbppElvFBpceRcXEznxeJqQ7A6Hq2sSsIoVDVl
+      mphIyVzOUNwzhxJTY5VaS0vomXkGCwvkxWVcymgTwYNUAXo9/PQ0YWYaJmfQesKmMVTSxYNr
+      tzPIqoKG1pc/9123fkLKWrqRHKnK1KpU9QT+zjvY9a/+Zw7+5oc59n/9NuGv/pqZn3kvftfL
+      cFu3Eycrcr9PfXIev/cg8/d/kf1feYDp3kYu//l3s+09P43bsROkQkldZZkW5kordjHkrsUL
+      WuI7cQ6czWDqDwZMTk5YLNwOjstASWapjrrHbFNN5BjRlGHYRxfnyWcWSPPzpNSgsRT/hAB1
+      jZ+aojczva7Al1rm5uY4dOjQ2sq7ZjP9C8uIIoYutjL61OL7JiubTKoEEbwbFQ9EL6hzaJPo
+      DxtqMtXCEv3nnmP+8UcYPvIY8alnWT5+nKVB36Y3eIfmdqiYnaJ2gY3TGwg7dsDu69lw6yvY
+      cO11VDt20GyaIkvAq5Kd5ZpdllGRSrn1zj2XtbkxuyeTDeSp8Liq9OaqI4uQfA9/w81c8y/+
+      GfP3f45Df/kXnPjsfQwf+01mt25l2DTEwYC0uEzlAtX2Hez8wAe57J57iJdvJU5OEpzlV1V9
+      yTErgqNXXHahLUQRxuE5X7AG7wStKiOhj4nKB1ypZVexyQ0iUuhqM7K0zPDAAZaeepLTjzxM
+      eupZmgOHWeovM0xNwbcKiieCOM/09Awur1diXXJZXl4GViXwzyvnek1R2mLYDBCxYve6rgBr
+      tnEOUlBQJWSbvCAqVNlGt4TobFHnAXLoKMe/9GX2/9VfMfH8cwZIbdnJ9BVXsvmu13H5jm2w
+      eRY2bUR6E7iY0UEfPXWKdOQYS/sPsLj/OZa+8BmOf/zjBJ1gZvdNzN79OqZfdyty1TXEiQ0E
+      AdwA1YC6YJVXmDs6smfnfg4t73WLoFtKxeqVK2fHlLkem37qfcy8+c2cfmov1d59NEeOkE4u
+      4Ccqqsu30nv5VfSuv468YRbnJvBZST6Pxf9ty4Si+JIqU9swSlWWrqiosp3RiadXOWJOuGDu
+      9LJClZWchSXNhDSAPXvpf+krHH3gQfrffZqUG3TLZmauvJJNb30j23Zsw122BTbNIr0eziu5
+      GcLSMnrsJEt7D6wr8KWW+fn5kUv1fci4Q6qaaaL1HNW9CmjLGS290uRkxQUksjjLMauiuSEs
+      LxOfeIrjDz+KPn8E7yObbr2OzR94N9M33Uy1bSfUPfxURcQRxaMSUFyZBqiQhhCHzGoi9Rt0
+      fonhwQOceugbLH/pyzz/W7/J8MM95t7wBra99924m3fD1DQeb0F0Qd0ySnb+Bbmp1wyppdR6
+      qCI50hR31s9upto9QfXKW+j59v0jtDyKt37fbLRDWT2IY2yoJ12mXUffa0suIBTPySx1CBXD
+      JhrQhUICh0157KchVRzAI49z+I//jIWvf52skZnrrmXbL36Aja9+FfVVu6imJ9EJqxxTV+F8
+      TTsgXZy1MWoasiHndQW+1OK9L3nMC7XALyDFvcqa6dU13WITJcZEzorPgK/IvsJpxjdD8umT
+      zH/ufo584lP4qYoNt9/K9E/ew9QN16FTGziTYVB5RGyWbuMC3gu1ljlLOXZTErK0llTItVJt
+      2krviiuYfs3tyM/9HEvP7uX4X3+W05/6DEufuY8Nd9/Jlg++n3r3TeTJjWj2TIiNdXlRhEta
+      HNhVjzE5X/qucyGwB+oKzUql1hChKmjZgFQj6oRoZEMru4FWbBZtgtsYK5PoqFeYtgvLUXlH
+      TpHkPf2cqDVTnZknPvYIxz53P3n/fhYOHWXrf/ETzN5zDxPXvIxhVeGqClcFshPjpi7xs+EE
+      ucTcAlqR1OH9Ra+FVpYXFxlmYeOGaeJgmaVhZuPM1MVZrC8B2bx5M0eOHAHGkOjvVYoLaZPj
+      Hc67Lj3VNAZ6VJVnmIe4QSQuKykvo088wb7f+QOahx5n4sbrueyn30XvjtdQbdxiBfvB4ZsG
+      VEm+tlymJjwO7y12zVL6eHOpni5lgRPeCiSsgSKAn2PiFZvZcf1utr//3cx/8tMc/NhfcuLB
+      f87W99zD1vd9gGbHFejUJBPiLdPjxspDitUbry/p1tJ4Fq78SjJ49bgM6gT1QkVkWj3q2maJ
+      Ni2l+AQDYOAVp5lJTAnVFWVJbWKtPZP9PmelyZngC6bAKCUvJQ2k4pBmGTnyPHs/8mcc/7N7
+      2XTLbi7/qXey45abYNtl+HqSQTDC/kn1hOxQbYEy7SrG7LhWTSNArzS7XFQFHi6e4psPfYcN
+      E5npHbs59uxjTNaOjdfczq6tUxfzVD+yMhgMgLE88AoZ54uCFrs9ZxRcjqGaqaqAFjrzOMxk
+      EergjDCPiNaBatgnfvnrnLj/AaZnZ5n5J/+ADW+6Cze7hUaEfh7QkwlcghlXk2KyjiWvRGyq
+      g0sFOZWqTJFn7ArNbVcE0QrNiX5OaLBha3r1NWz40N/h+rvfyOE//SjHP/5pTn3tMa78rz/E
+      xBvvJlfTOGsbQIHQTVEYqY/rns6qpzKqhTHebGfNHk6hSZEshRKnvNxle9pNAMmCz0Z3v+wi
+      Lnu8tmwco/y3jp1KnKAJUsxQKRVi9LEZa0RwUC8ss/jA5zh6773MP7OfHe98F3MffDe683Ka
+      egKfo1nq7AiuQnyg8RmVTMiF7E/as1tmoNu7xAp2LqoC+1BDHjK/pGyp+0xvuoZX3LyJhx8+
+      hG65tnMdvb+UE3j+Zsnp06eBkfVd4Zl0355Hba0MalTAj1VBtU3yZEOcNTia5YGVTvpAOHaU
+      45/8NMt79jJ982623n0Xftt2lmMmeo+EQGoyTVLq1jUublsVAqnklnMu7pzzlnCS8W1mtIiz
+      0LmCmtWGe3kruAjX38Cuf/zfs/hjb+CZf/9bPPcv/zWX/cJeLvuZ96EbZ0kSUCl1yd7YJMkZ
+      TYaiu6KMrfe84knJaESJ5bmgCqErR20HjLfvrRRysLRQo9Y9ZI36CZdzN8fXjzHItOkf76xt
+      MGnC4UwRsTpnd+okR/7wDznwx39M2HUtV//Tf8Ls7a9h6AWVYJVgPqDeGQ1QzkRJZdNwpXhm
+      xPnd4t3j9+rlIqPQ/YWTzFx2DdduyTxz9Aw5CqkfyNUELStlSumFD/QSlhDCqG75rKb30Yc1
+      ctugo2PT0WIt3lRXU+2cGCKarLbWJ2VAJDhH77t7Ofinf8Rg4SQ73/1+6lfewvIGz1QI9LzQ
+      NDbsC1/qtG0Z2gTAlAne411J0yQrmYypMZCo5YzS0TRAyj04Z+WGTUpkPFVBiqkDueoR7r6L
+      6665mn2/9WH2/fbv0uw/yI6//0uwfTv4ioH34AUp6RgnhUr3RUpd1St+HqWajeXDIQRnCLjP
+      o97qtvEfHIFM5cbHoCjiHJojMQkDF6hRYl7CHz7EwV//vzn4mU+x/T3vY8eHPkRz2RzL3uGz
+      o6e2eS/mIdrAVD3BIEVL5626dhldqi2BVUvmolZiTWzcQp5/nm/vOcKVV1/DTLXMVx7ax403
+      7LyYp/mRls2bN5+DscJ22ELSP+ZIjznV42/p8BQd8Ys5JWpj/S1ZkJ5DnniS7/6r/5VDjz7O
+      3Hvfi7zqNqKrScmjzuN9oA4eUqIKwc5VTuidt2aBDD5D0MIl7TxebIxLk5PlN7vrHV2eaBmu
+      5oQBiaipAERmsZ2bgsuv5Kp/+t+y60O/wJF7P8e+f/N/4o8eQhhSZ6WKZg1tQ3nB0V9rStM0
+      5/jL2MaYlJCsvbLnA5UPpdnD2hWbnBgkm9LQlsB6gSlxeLzVmudlwt69HPzf/g0nv/ggu37l
+      V9j1j/4Recd2NEBNReU8KcASiSQ2ztWLMFHXJRU1vnWvutI1bvviutDVJLe/9nXdz5tvvo3r
+      LuYJXgLSLqa1lFhFjHQcCq+SlCqg4qJq50F371dtEVBvg8F9RiURdUh4cg/P/fvfI+mQV/+z
+      X0NvugVXBZBEHiQ0AkGQ4In9PiF56lB1HoD4AgRR2uUMowWE4BzRjdxq50u8VmBkU2Ajoqsk
+      kLSxJniR0qUDwQWa6Sn85BThF/4ObnYzh3/9P/Ds//JvufLXfoXm8l34VJFcpnIVFa4wjWhp
+      HbwwWU0ENy45tR5DsaoYNa/HKqucK837aoUwKRqbYOV9i/cb4WCzjH/uaZ75179J/4lnufof
+      /yoz73obqZokBKHWaeokRE0MyQzJRsTvPINBY8+0CmjWFWBY+bhHjCY/SAu8Li8sp06dGnPD
+      TFosy+helEFMDJJZN5vLYykLI1/XUt6nnRLnUlPtMlSpIqdF6icf4dRHPkG9YwvX/Y+/xvLu
+      3SQVAhEN4KvKaqKBiOVFKcOyvJNuxpKiY6kdm1rg1BDogFnjULptsmpHDg9mgT1CjTCpgaDG
+      iKmFxjZ7Q3wFx2Byiumf/Amu+oe/xPwjD3Hg330Yd/IUkUSFsyFjjNgux32UF5J4Tgu8WlaQ
+      3uJVqTz0gqOujN8KoImJpiWHzgou0zt6lMO//mGW9jzNFb/2S4R3vZUkkzZ5otz70As+eHri
+      Cero+Zqc1NJZ3sbetJM1rEe4bM7lMx/d/OjzX88DX2JpmSTOtsAWg+UyMSGpEnMBiHIkuEBV
+      Olo6/1QN0Im5gdaNzZGwbw/P/B//jt62q9nxy38Xv/NKgq8hZ5okeBeKYmaCGjmasShiLrO3
+      4hDKQvJjV9iKCl3S1jkBbVvkzBLT9rhialE5IRWmxtbaZWxQm6pS5UwzOY1/5zu5cjBg/2/8
+      Lge2X8b2X/5F3Mwma0hwBjq53PbmrvYqR+j9uFSrYuCVz3z0nnEM0ZUH7aKdxGMbWw6eJkeW
+      SeSk+CxMLp7gyH/8Pc587Wtc8at/n8k3vx2tpi295pSqPFsv0GDAV8sZ5n3ZmKSMRm0rvLD4
+      u6Wk7a6tWzN23esKfInl3HlgQTUjOVrRXlvdU4LfnDPDQuXiyrQAFSFoJiQ6rmfmT7HnNz7M
+      cM8JdvzSfwVXX0GQMhuoTKIXFeNfFodqIQzQwkQ5Jjo2fG20gEZ/76xVy9eMN++AFkdfufBa
+      C5Zb9gCLBUCUUHtUA32nTP7Ue9l5aJ5nPvYxql3b2fmen0briqowUGa3WlHPb4mr+lwKvAaQ
+      yGjbGT0Hc6udgPfgXSAkG4yel5dZ+MinOfbXn2XH3/5peu/+KZqJGSa8tyb/kiuXAoClbF1a
+      VagMkEtWuplSIgQrIhkOh7jiWYnY+BctoNnq615X4EssKaUVVnhcvEDtPJUrlqpU3ph+ZVLK
+      xLYsUoUcSg0xNk60SpHB1x8i7j/I9g/9HNVrX0MzhBAMOU4pm7XEYugQ/Nh15c4KrJTR62G0
+      cM5e9mWEiBt5FjJ2f+2s4lw4u7RMRhxPiXkn1L4iTc8y+3MfYG7vk5z47d9nyw3XEV75amtX
+      FEVcwiUPKqycm63lTC3YZdIMh2ch0e2rzyWr76+l97WZhYYBqCT6j3+TQ7//J8ze+Tpmf/Zn
+      WZqYsVSVW+nkF8cXWmCvzE1q03MAMSYgEbwjJ2P6yNkI8cD2ydFAhPJ5nuce1uUHICdPnlwF
+      QK0EJoIz0rJ2KHcQGw7tcdQ+0AsVtQ/UrkzNE0fCEQdLpGee5sQ3vsn2n3o7G9/7NiRMMllZ
+      a19StR5aseIOSz1ZWUS7gNocvSvWQgtYthZapKv/K+ZYkBXsEuO2UiiN9AXVNVqYwi9hoaS5
+      qVWi2bmFy//eL9FTOPi7v4M7dohGos2a1nbjWnnw8akP43Le1KWs8bXWS1TQrGhWmqgsNwPq
+      w4c5/Xv/DxOTwpa/+4ssbd1GkIaqxSjEFJkW4MNKaeuWGldt7rNf9WX9wy1/dSa34dFYr3fT
+      RFTXFfiSyziAtXKxFWVu451CWdMybBjUI4TCJGktb546BSRCOH6SYx/7OK7KzLzlrfjpOVxS
+      loYDhrHpeJBjTl1OXgsY1DSx/KxlgqRZ/XYMzorugTHPIbcNCFD+NZXt7J9Q/lbuHVvI4hwZ
+      pclGKocrd6iCN2SLWGXiLTcw+3N/i/kHH2bh859Hh8vGEqmO5FalrQRErBLswtNMIzCoTQ1p
+      CVlGEwBHG1GjQk4OSYL2lzh172c49dDjbPv5n8FdczW1OpIPRO+sXzkZep0x3rNh01iYhMXU
+      UsIXX0pguz5u5wh1KEPVBF8FQ7qTPcm2ICrGtK7Al1rOmQdunayy8oVSNDAWkRnM1Tqr2vXX
+      Bp8YfvWb7P+Le5m69mW4LZeRRajqwOSkUdV6b439dVVRV1U5qu3kFgubOpTaeXLh0gre0iRR
+      Ch5duK8y0Ua9YHBUW7cr6MpuIVnxT/eDio0HtUUOLeFAkoxko6wJWrHxnh9n4ubd7P/Ix/CH
+      j1qVFzIqZBk7sKpjLZKZ81f+Fbd77DhtHn70V/vyBYFXiYR9hzj0kY8x+ZpXMfPWN4Or8Orw
+      rurClKjKMCnDZDOEW0yjnZwBNirHek0CvgqEqkI8SLYJid47BsNB8ZjoshI0qcsarMsllNXu
+      cydj7ttKRV3l3xV2DQc4r6hTdP4Yhz/+CTbtvIJNd9wJ3hNCAG8k41aY4I1QXMSAoKK81ggh
+      HYjSWqMYo+VBfenOkUxyymJuWGj6LA8jgxgZ5AaN2dzfLEgpxtfiU7uVUJb9TkbVW8aIqSAW
+      XTbZYkAfKoLvkbfNcdUH3091cpHFL9yPpr7FoAqprF5FunNqPtv6ng/Eck46j2MUQ499NmKf
+      maXHhOSEkAYsfPJzcOwUV/7M+4ibZzvLWzmYKPEt4kjibPqFWE69nTbRbjyuPA871WjTTtF6
+      ntNgSHSR/rCPNg1hMETUwMzMugt9yeXkyZPA2rHahYoCWcxhDRn6X3+IpSeeZNs7307afhnZ
+      16QmMWwackw2jr5Y1JQSgyYybKJtBM7RNJG6rnAl9RNjoj8cEtU6blRa/ilH3Qyojx6lGkbc
+      4hn80YPQ9IkCA9eSrq19zVAI17UQzrvCCpmy1QIX1DuUYWJOlKH3+DteS+/lN3L0Y3+OO3LI
+      Gv+ldXk7v/ecqFQzHK75+27PlBLTF2L4buoqdvxhiuSUcVpKao4c5eQn72X29XfSu/1VLFc1
+      Ujt6XggYD3SQll00F49DiQJDNWtsuXvpQpSVNc+uNHEIYdhQnTxOiH2GDIgnDxOXFhg4Szmt
+      K/CPqCTJlp5YmOf4J+9j8ortbHj9XRB6NGCuWkz0c7SRJMOGpjECOyk1yqg1QtR1hS+WtgVI
+      QqjxPlhxSVKWUyIPhpz69Bf46j/758TnnmL+s1/kW7/6P5GfO4CTRJDC26SrvlopimFDuaQw
+      Q9qsoiblAqKZlfIZes7Tk4r+ho3MvfPtDA4eZOGhh5AcSShhrF75fG2ZTbO2AkPhB9Pcuc3j
+      7jPYRuucazOzuNhw8oEHGJ44zNw730YzOYPXQI2jAmuHxGh1fDcgbjRcPOZEk6LxeZVe5e4x
+      tQothQVEMunUKfb/xz9k6dHH4On9PP4bv4M8vY8JH6iCX1fgSy1zc3MXpaFfsxIHmf4TT3Ly
+      a99k5k1vQnbsQLIwWVfUvYAE6xgaR0IF0JRIhSStrusuRkwpEWMihECvsgHXlXiLR4MBZ73T
+      Z5g7cIA6JXqLS8zue56qiWUAV6arMxn7GkmJ7dWquOrS0ZOcY2hJFmsqUEWSQ5yj5yxl03vV
+      LYRduzjxmfuR+TNkMV7rlJIVQAAyZjnHJVTV2s8QaJLSHyaGmknSxtXaubiCELyxdvRzJp84
+      zvHPfp7Ja6+j3n0zWZQpsUaNFrFTkc71RnMZgSL0XCDgDMnOds5Itt7jtr7UC+Kg6jlrzTw1
+      z6nPPQBHjjPthZ2DPnL6NDYffj0GvuTSTqoDzrYaq63WuYyKQq1GvHb6q1+lbhrm3vBjpLom
+      akL7jSlKXTMVamrnjb0hOELw9KqKiV6Pqq66UsymaQzVdN44inVUiOFU6anigyMHX4aOVQge
+      xFDhdki4nHUjZ38ZeZ2BQiEENAjZgS+5YV9i5wioUyoHfnaW2TvvYvHhbzN45mlyTPRJXRjA
+      ysh15TM/ByqtYAQGYoTtw5hJBSTrFLlYz0qVXsrEZ/cy+M4e5t70BpY2TEMlBvyVc7Tud9ZM
+      LqgxbfMDztKAVYV4K6wZxmj9ytoWwNi/0Tmc84g6yAmRQI6Jw08+QTM/b2m00q+8LpdQTpw4
+      Meo4OYfbt8Lz1LUUAJtDOzjD8Ue/xcQtNxGuvppBSQOJE5qYYWiW3gWrbfa+tPNJOzM4MUwN
+      g6axJoMqWLVUceNo6bOcoOpIChILACMlt1q6+sv4tAtL4JRrUGzzyCmC5tK8YWwYahkUEI9I
+      RaxqNtzxOqDP4mPfgmFDlZUQCr9Yd8yzpTqHBRYsz147q00WtUkWbUzdpsfQXAppBix+42FI
+      mcnX3Aq+xmWPZBs6bs+jfILJpkHU3jisY840aj6KE0qu36M4mgzDlIgljGhDAlVLjntVglPy
+      wjIMh4S6wicYNusg1iWXFe1/q6Rb/GPliGtqhBiZeTp2DP3uATa+5hbc7AyTYrOVQgj4YDHu
+      sGkYDiNNk2iayHDYMBgMGAyGNDHaYC4Z5TstRm2LLkDcSEFGNR1thcIqfFnHLnANJ1rGlCxT
+      SOFzpsJRO+sbHpbOH4pOosWzdJ7JXVcyuXMH8499F58aI0Vf0SC7tg89PEcM3HoCQRy1d1Re
+      8N2UxvH+ZkdWIS8vMv/4o0xfdQ161dWEYKNdR9Ww9hxzwRaC92XgnC+bbsEtCgbQEyvOCeLJ
+      qgxSpJ+Spea6D8BOkFMiT9dcdu1VTGycIaoFK+ullJdY5ubmOH78+FkdSUC31jtXSsqwsDXM
+      ihdl8fEnyPPLzNx8M01w1DpyJUXAh2A7tLSLsdRMdFVCNmco62iyYEsSkLHOKKVMQ2gvojQ5
+      tJpYvEPLZWLv7dr3BNrpCe2dtewdihAxZLx2lqMeSKLRjGas+8hJob4xyRtmmLruOk49/Dj5
+      5DHc9CZG/f1j3FHjDxO6eH+1dEazQNFOFG03V83I2H1KFuTUCRb2Psu2O99EnJkjVK5L+Y0+
+      N8MnnAulQKPlz7b+6ZhLmGJuEMHZZyJq42/a1kUv2cawlM9NxCEZhkvLLC8uUTsjvF23wJdY
+      Wuu7pvusI23NOZZh3IZ+Jo00cWjVT5JxTcPyY0+gm6aor7jGMFBpraJVJGU1wjvTJKGNal1x
+      32zWrJX2Vc7jEVKKNLkhaSTmhpgGpNiQU0JzRMVSPm1KKmouKK4W8vhYCvajVUY57YZxd0tc
+      C/pb5ui2c3LbebpJtRuM3V51JpPqmombbqA5fpzhwYOk2KDaoGplhSpyFooMEMI5XOj2sbQ/
+      a6l41kzOCS1fmWQMl4eOsjx/hqmbbyTUEx3xnbSJ3ZJfNwUUI0IQyzNX7SiYcm+5nNxc8wZH
+      pnI2O8mpkmMiNtHKNwU0Z6TfML/vMPSHxBhZHMaLa4FT0+fwkeMowuyWy/BpmTP9zGWbN62z
+      UhY5Xx549Bu1UaAl1dLS2CSNpMbKG6vBkMHB59l0+U5kbgtOR4To2rqBYjFdThB8WyTAmKc5
+      2uFHMXdGNCEpWcG+ZsvdOiOOdxqRUnmlxaTnnGiaAUG8uaA5mVmzrvhS1OFoidGVXGYFWT64
+      K2oQU2ZLDUWsTcO3Oo/zFZPX7sJ5IR49Sp2GJBoUwYce4tdW1HPJakWXYm0tBs04iusqIFHp
+      P7sfHwNy1U5wmSoHy0kXlz+rEnNmPLhogwgVSvOCbVBiqJah6BpxSQgCQc1PaRTIEZL1MosT
+      nHdMzW7i9DUv59v7+8APqB/4xIGn6Pspjj/zbWanAwvpZl62bfoHcaofObFJdGs7Pjr2TUcf
+      k9Xm4gwWiA89TjWMZOdolvrEfXuY2X079CaJ/z97bx4k2XWdd/7Ove+9zKzMWntDF7obQKMB
+      kgAIECBIkBRFUiJpkZZESRS1UpQ8tsdWzFgTsvWHw+EImQ5HODyLJYXtcIzHtixb1EZREilx
+      k0hRoriLJACCJABi3xq9V3ftlfnevXf+OPe+fFmVVd1NNnqGYp1AoaqrMt+W77x7lu98n1Hq
+      mxq9FUxcYXSFJFjyyIecJvlG8lc0CPVGoHSs3/sAa/d/Davj/hgqvAwIX3mEVmkxriSEQGt5
+      wPIfvJ/BZ/fF8FPIywHlRJs9b30zcuhQpJ3V6q5HZ3lLrzhea3UmWFtcgcwYBpWjgpgrgsWT
+      VYG+tWR758g7bfpfegDbm8VkFi8ZrSNHya+dx2VbK1nbXe9Rqx9/YMC6iv7Tz+CeP4nxmiIM
+      7v8SnYkO2dwsq+KY9KauHzio6YVsYxa6WTfIjIkFsUhEaA0iloCjfP44y8+dIcsL3NOPUZ09
+      p+Ocp09hVwc4Z3Eh0PnB7+frxR6u/8qnmeivXGlKnTYHDx7g1OmzHNnjbPP9CQAAIABJREFU
+      2Dh3mJtvmeaBB07h915PWeqHXuwAbfubbtPT05w5c6YuZjVDaa3Kxj5i/OBDgIG1hOdOcP+/
+      /D85cH4BlzlMWdBZOYP97tdBFhDxcbTOjuSdxhrVoI2C3iJhSAqwuUIWIKMC1lh8/CGe+dOP
+      0HYlqi3gcAYKZxjccIDBhDCYbrNyaA+De+9n3TgyD14sXirWp6eZuPOVtPZdp+ILJoa4ovm1
+      rkiRQDoeS4r2jVHJUBcCxmgYSgsKDGZ6jvbUFIt/+GFO/Okn6HhYy9rM/fzf4fBPvwPjckTy
+      kVNzfvw00tj2ksTCVb/kyT/+EIP3/jETgwGrNmN2ZZHObS8m601QiMFXgcqq5Gjp9UEpqDZz
+      c9upTqAjhNov9yGgyO2SQgY8IRM8secYCMzcNM30X/wa6089g6GinJuhmipYzhyDm25ksLrG
+      8gd+n3Mb/Su/Ai+eeobJ/YcxUjAoz1CuCKHVwRhDq9X6jmelbAInxuGh07ysMUalNAJkIRAO
+      HuC2f/ZPKMoKZwVz8gzP//v/i6miRRrps8EM/SEWpowYrAm4qA2cN1aHceZDTtma4uAP/Qjz
+      b/xbsWUk2BAI3lIN+vil06w8cZZ2Zz+3/Or/TuhMkmcGbwOmysCXBAtmbo4yK1XzJxT4kNgm
+      NIUIEihFw3FjVG/IImAsZahw3mO89s0lRArYVptyqktxz4s58GNvR0wXJKc4dhRjc5ROZPSc
+      gt++XTf298Hh84xr3vK3sC99GdaDX1/nwm/+V2RmCtPKMdaoLrFIXQMQFJgisk0/izh55KFy
+      lfacTc7iasUzGwXffahFIfDlM4bsn/0yd0iglJJwYYH+qQXKMxfYd/MxJsMkvX/xrznQuuLS
+      KoHlgeWGI3NYArMTFfc9fJrb73zZld3Nt7GdO3dupA+8eaTQoyyMaSwoQ8gko+pMMf3qV5Jl
+      Fm8M1SOPs9Rqs2e6h5BhQzaUGYomQbPIXCIUMAwrpWO7UwFylLrOTPQwvRmCCNZ7hIqBMWRn
+      TvH0r/0Ggz/7HHRn2ftLf5fe238Ek7diNdfo0H0QfFDVAkSrrlUIVD7UD5gQIqY76Dkr6snE
+      h5fEIQKdjS18pooNJmAkw/cO0n7NGyh7PdqSYcRThSoCmkZD5ksLodMngEqihpzedcfgRTdp
+      VH12iVMf+BMm8h5ilEEyl4ATiYVCzVOtmAZv19ata5qgEYb3AeM8y+uO6bbQbrWwWcbBSTi1
+      MsAcmiGrljn1kT9m7T//NmZlheW3vpHbf+mXeLjf4+mNK54DC4evu67++fqbb+P6K7uDb3tT
+      EvbxK6C2/iK1rFMe4oCuQllW4IwQTFDFgiAUIcPaTENX5zUHrQtCjfZN0DC0jNC9wlqC2+rE
+      Kgci2GDIjKGM9RmLTtU4EapnjrP+mS8yv3qecnWRsx//S+be8oNUsy2s92TexAkkjQaC8+Ri
+      CVYI3uEEnWWOKCJtQelEkkSlhxB5sohEBKX3DASMeNqVQi+10KZUs0Ey8A4bLEHsaGl5jI34
+      1paLEENdmyGZUImjLwFbFAyCp9XSh1FRQSAymHglus9MpohVv3WzArWSISZQWEvlVPNw70TB
+      4wslK/2Klgs8dWHA9dMZ4MmWV1n8+GfYf+oUhsCTn/8Me46/nbtvv5MQZVB37Sra1NTUlj5w
+      GqgJIegNYExUCNDpHoMn81AZSXyOiJRk3hOoKDOvUMTU0mhEcHUBJVZ7XRTlUgDCMFMbAkcE
+      42OoaxIThMH6jCKAndpDdc08a2cXWS+gdfQImckJXh2cLNSAfkSLP5mWdhEfFNaZFAhDIqbT
+      AQZiBOGJ9LVi46B7FdtUhtwZnAexFYgn94bMOIJ4rRYHRXPV1gSp1OfZ7Bc3Ta9H7mJhKoJC
+      uh7EewpxeD/AW0+i7UnaUJlRoTHxMcwZ22WIAi2xvpEb7e1Odlrcuq/ic8dXcR6OzmTMT3Y4
+      u1qSSZv2sRexeO/9tPAU11xDtzcHtk2wu+qEV91arVY9D1znSgHqT1UEKyqPUoVI94rD9jfw
+      i2sYY3AEWFlRr1/bwLqotOekAWxQG642Gt4F7/CVw1r96IdVUqWsrWSACSr0lXudSvaiUzMe
+      oTi4nxv+6S9x6iMfpT23l4M/+hYGxQDrDZYMcbH7kZXkJlO+aKMkfTZBD2qchy7xhlFyP4vQ
+      QqLGkV6HEBTsIKEkOIe4NiytEUolG/CdLq49gSWQG3XXVG3XB9pwQEH3MvqIS1crCAzEEZxH
+      1jcwg762lpaWMWSYgSe4Kl7vEOGmqlxh/PBj3N5i8znuvs8GpXPsn2zx5m6GBHDB8KlnlxGU
+      tWTu5/4++/ZO0j93gaNv+V7s/AHwnszv0spedWtioZMpY6HmfeK1imnjfOzAObyvaD35NI/9
+      8v9Be+ksla1or1h655YIq2t455HM4k2Su9x8W6oZVOOnctru0Gxx+EoJEBzgHWc/9VkWPv+F
+      WIUOOFFtYekLVbfLje96F+tnF3jkt34fGwYYPIQWtp0z8NDPCm780R9m8oaj9XB/YmZs5uB1
+      vzStWGFY3DNG6WgxBlMFKmMQHLJxgXDvl3nswYexEljMCuZ+5sc5+KNvZ2Ba+ODIjCoepL53
+      iKNKSdcoXZMs/hBixANQBodUazz//vfT/8MP0Vlbok9Ga7lPdtvNVAMtWXmjLaHcNK7iDuG7
+      5tejMU8IBlzF8uMP8/xH/5TJ9TWWfvAnmWlPMPPB38JlBc++8Sc49NPv4sCZ4zz1wQ9hPvbn
+      iCmwL1QfeNe2t8R5JI0P0hhDt6sSrMEHTNB+qHOKpLIlmN4E06+6k2JjA4/BbJRs/PlHcRcW
+      EURV99Ldmn5MvUihHrWzRotLlXfqUCR8loavOeBcxcaJU6x99UHElVhvqYzgcBQnT9OXgP/e
+      11M+9SiD33k/7SPXUfUKCJbSgp2cZCWAW13FoQ8nYnssBRxmh5UqYUxSdJAZYc14jPf4tXXc
+      yjqTtx0ju+UOMjG0TcbUdUeZsIUKqqWQvLnNEGd9QxxQiFdHTAptI3dXgCIAwdI7fD29730D
+      dnWFDoJ8/SGWT54krKwxmAqIUebIhLpqhunjzi3N/hJC/VHZGIqvLS+z9PWHKFZXGfygZWJx
+      gfIL9+HX1mm/+q2s+/3MLF2g/8EP0WkVlHOzhHDF9YF37WLW6/WGfeDIyFiVJVVV0e1Nxuqz
+      x4pS4JTOU2UZ5tC1zP/iP8R6i3EZpr/C06eeZPnUafZVJbRzzRPjA0IfEnGnzQU/KKmccwo/
+      LIwdQWbZzBKyCa57xw9zw/f/7di7tSAlpqpYet/7efJ3fgdbtLBW6PQmufmf/3PMrTdQWSGv
+      rKKzrCBFB+8MlU3FJupquIjULBRNSy2mFGlqNGzAePygT3V2gXK1YvpnfoDpt70da3IFR5gc
+      ZwzBeGxQytn69H2c8nE+cnhpqhFCwLlQKxcSWTRMliNZztzrX4d892vInEFcxeJ7/gcn/sfv
+      Ui4sUM0fJCfWHRwNyNUOH348/zTDbK1R+KhpsefOu5j8NzfhvWetaHP/mWlu+7e/Qn91gxUm
+      2RcGZHaSIpviyN99F523vpFgd4cZrrpNTEwM+8AQwf/EudxYvpQQIYyJUcoQvEXI8Ba8FTI6
+      yDXzrH/lAVhZRnptBM2PK+8Q78kyG1symvOl+8sYwQSFLJbBIZIUj1RzKA8WN2EJEx1sHJBA
+      HKYC35sGNH83oaU45pkJZHZaZ1ZD0CKbsfjKUAXlysIqgKFSbZUI6N+pvTNksbBAywuDEFg7
+      fhxfVeR7D1BKhmQKhwgRcpl5O+JDusrG/mxszSU6G9CiXo2fTpzYokU0LSiKDtmHFvboMUCo
+      Fs4RrK+3n6Yi6rHGbZw45eTeRJYjAgaD8cIjCwOeWxaMZHRzx0v25jy9bLDtFjd9/a/xrQw7
+      NU1BRehN4Wf3InaXlfKqW8qB63lPicgdMaytrqJgQ6M5Fgwrs96xQcCJip04Ebovegnh7AKD
+      546rrk6oaGU5mbEkdsjhdF2khAkxRBeBCNr3wdcFHu88K/0BrlLtn4CO/OKjcFnQYlaKE11K
+      XRMjpBi8ZEouJ1F2RdLwgo9iaL6ht7S9Davzul9xJWsPfR0zOUl27bUMTMCTAzk1HU185KUF
+      EVReVB+D2hNvG0vbqAphy+r1ysViJU5dxUH+ynmcM1Ree7b28Dx2qsf6Y09iXam45npaSpqz
+      KNueDyQQC7jIj7Ww1ufkSsnrrpvkDUenKaxhtQrcc/00L1s7w/K//4+EtX584IMXnVzyfreN
+      dNUtcS2PcEMLrG+s0+60SfGsjawYBMFHFcAKhSPmkUe4d+fLMHnO0uc/Q+/WWwjWkBeBzFrI
+      bMx7AzSGCTyqAGAyS240vFSam8D5lTXuO7mOC8rAc8eBFnt6vUjhGgfN44TUSEMmqHN7UVHu
+      kTCYIculD4oDt5kWmLa72ZUYb1jUIkDpPbK0wMYDDzJ1601kB/ZjJCOVxHRscnxWvbGxQd4q
+      RivEITJ/pgIb2tfFgItgNQN14hyoMAf2M3vn7ax85V5mlt7GYGqaARVFlmMaKcF2ub2EgA3a
+      JsQoP5Z3nvXS0c6EVpYhYplsWVb7ld4nriJ4p8en3ThtcXmH87ukdlfdZmdn6xbSsPKabqCG
+      WwRt8hcCBcp2KA6C02XQWIPMX8PU0WOsffUB8o0NSisM8PRDxcDrbG0VQ3TtGFP/zvmgK49V
+      9XrvPfefWueWfR3edGyO2w70+OrpPpUraxrUkZWm0YZJVeZhS2xYSVaRLs1BDcp+oUqDzW1s
+      snrZHVpmBPv0M6yfOsvky26lKortKTA3WSLw22yb1+ua2CNozzoBSxKxPkUHjhyhfP455MRJ
+      bCCmKZunnsdbcnDjIQ9CESEvc92c0gfufX6Zr55c4snzA27cUwyLkiK4Vs5Gr4c5sJ803+12
+      eaGvvg3BG80PXKvNdS1Y4uobhbVzgUJMXTAJpcdUULVbtO64gwuPPk71+ONU1YBBWVE6bT8N
+      vIZoicql9E6H6EWpY51T4WxER9zWysDerpLA7+1m9F3MFw1a3Q1xtQugsKJQKyKQiN+Req42
+      zdsmho08yxRq2JRr2Hx9GFbMTeOrPehz7nNfIGDp3XoLZSvTVbzRkNrxujNUt0hfI61gAeqo
+      oc4LhoUwAs7DzMtezvLSMqtf/BKtqiRDakffnpUrbUN3ZEQZOXKUCVSM8PJDXSZbygjymsNd
+      Jrvt+sCyn3wnXzzyMv7K7ufUv/g3cPONxMGvXQe+2rawsDCejUP7LDifyk3DiZbEnmGyHIyh
+      Cl5H8wrL5GvuIXeGpc98mskgTGQ5hRilbY1b1tU3jhWSYJae0kXKWach9Vwn4/Fza6yur/L4
+      2RUmC0NmLQFPFZw6cCSRE1LRLVZ08SPhY8rXKqcoqUTNI/WQ/nYWagfWYQ5NMv3iIsv3PsDM
+      i26iOHydEu/Z5ru2N6kdffSrXnvD8CsVAwSJbS+tJTgxhMzQOnKEvdcf5fwn/wq7uIitAsbF
+      FbtuUW1XxaIOVPS6qfKgMQbJDEf2dTl2cIqiVUQZlUDYt5fnXv1m7poT3pgvMLF6gW+09+kq
+      vEtqd/VtPJ2sllg8woDAgFQjGq4EBmVnNDGc7RMIkpEdu57uHbdw7pOfwp5ZwBhHIULXWtqZ
+      kGdWBbSC0tS0jKUwhtxkOkmDAhdKX3H7oS5LJXz+uTUu9AN3XttDjBLPuSrgqCgn26xfcxiX
+      ZYSJHqsHrqUyAS+GzDsCUUlPUGHyEAheyE2GvYjrQkwfJAmmOVyo8L5i7b6v4J54jrnXvx7b
+      naUIqnjgGSKstnMdHy6lZJY+ibDJofX31mvlvpzuMfeG17L08MMsf/1rVKZKR12zklxkIR6x
+      HCG3GSJKfPfg80t87JEFPv7oIs+fW2O93abIDBMXziAri7S/9hUWNgI+CLnZ7QNfdZuZmdky
+      D5ye+ZpPRqkRkiAndfFFhCg56RTaaARmp5l5y5s5869+hfNf+CwzB38Ab1o1TY3x2oZxYiJd
+      S9ybUb6myrtYpBGsCLfNd7VFFB8yZYCKgA+GImux583fzexr7iDM7mHmxiPc/tqXY2fnwGWY
+      WGSDdPNrCJ4ZW7N+jDy8xt7oghiPM+BVQIls8QKnP/hhWtfM0777Npw1ile2GtZbacAmL8ea
+      Fa0tv07cIak2JuR5joSM1nd/F8V7/4gzH/tzrr/zDvzMXgY20zTBST1vHSKzB6BIu00P7tSC
+      siJ4Y3n2zDrrfcebbuzRLwOfe3aVV84XlN6xsu9aZjuG/uQR9haGjExHNi/zlHftW7Qsy7ad
+      BxY03/OR+L2JD07fm7Q4wQUGxtB95T1M3XorZz/wAeTkKUpK+gjGGbK4+JgozNUMIgsjtLOc
+      wuZYTBw3jKuyj+qBHqgiYshYpN2DfdcgZgJpTyH7DoBpEww4IzU0U4tXIWr/XFqxKab9eBOw
+      eGwl4B3rX/wsq/fex9z3vYVq70xULdBKtrWm5twK2+xmJ17o0a8GIV/jNYkBUgdLBHdgnj1v
+      fCPLn/0cG1/5CmVYJ6sCReTOq4wWBZ9fXObjj5/jTx87xzfOLo/hQYuKjiFggbMrFfNTGSYr
+      6HU6TLctyyXcdbDF1845Pv70gCoruGVfh2DMrj7w/xe2eR54swmRfpRhSJbG/CDKUYpyREqF
+      Aupn5tj/I29l4/GnOf/RjxMGK0ilVDg+vS9uP92s2kJRLLAKTksk0KuXShCJGr4Bl3tFVJGB
+      VzrXUgxCTmUM3ngQj5M00+zxzmFESQV0cxdx5BAwHozCpTQcP3eGU7//x7QPzdN70+toF10M
+      UCV8SYCoPKbFsTGr8E6yKyMXPiXEDTOik0Ypa3YGaHWY/dvfR3tmljPv/xDm3Fl8uYH1kJrl
+      SxtrfPV0n1fM93jdkS6nlvs8t7i+za5VaXJf13JiuaKqStb7fRb7jqmWZard4jU3TPGGY1Pc
+      cbgLLauC7NXuCnzVbUdJlRgnq8xmwJutUpegeGZM1OX1TuU97nk5M694OSc+8EGyR55CqoFq
+      9kqo9Xaao3WpUBZjPVX6jcLUxhjyzMbj1CNoe2g7rTIHUbhkywvGq9p8FnPRUgKlio8q0qhx
+      84+5Go0VL31XWtngDFKus/rRT7D80KPs/4kfg/kDeGtxYjS5CEM63B17sDs9NxpvMonilVQF
+      15TD+JgboxNbRgLmyGH2/sjbOHfv/az/2WcZlOv0rScjYINnYa1irpMxM9FhojXBkamM8+uD
+      TQ+TZhMrcMOeNkUm/OUTy3z6mWVu2VvQ7XZwxtK3Bi8aJUnk8pbsBShibawu8uRTz1C6wNrS
+      As+eOHNpT8DvEJuent7SB26GbcZqlVdXYVFERXK7ECK3syirg4EqQEmg6k1x8KffgWysc/K3
+      /ghZXyLzyijpgw6dh6Dka7q6Jbku7Qm7uHIYo6wYGgLE/M0axFgNqUPAhDQvSz0o4USLcKVz
+      9FGklYl8z3UxqAGtCsHjJImKxSORmPtag3FQfeNRTvze+5h7xcuZeOMbqDLLBgGPwXpqUveL
+      lcaSfOdOlvLczWvaSKMqtm0CHp8VzLz1LUzfdjPHf++PsM8+h8Yw2vOebhkubDg2qoqqGnBq
+      1dErxpWchklNZnNunZ/mu67v8ZrruszPTpBFqdI8sr2XweJNVNDgCveB/WCNrz38BL1um7Lc
+      4KsPPopffI7HT65cyd18W1ue5/U88GZL8tTWDFFUAorlFw3nkhfmGDIJgGUQDOQt8tvv5OCP
+      /xgLn/wMyx/6MN6tUDlHGUJ9s1sfoZFAUoBwkSlRxwvVecuqitVnR3/gwGsvecNXVKHSFSne
+      e7pi6Uoy3Ba1844MLUhqi8X9i8eJi+OK2luu+gPKk8/y/H/5dargmXvXT7E2OUkZII8sFN4Y
+      bcU0trudJ198AVEwivf6FeqTSl9S70vEYKTQNtbe/VzzzncyKFc5+xvvwR4/Sd95+uLodVrc
+      MGP5yyfP8/EnF8ms4brZzvhCFgJYCIZMLO28wFhL3wc2qlIRbNZQZKod5StV2XDhEscJn3zm
+      OK0iZ/6a/Tu+bn3lHOfOXKDqr3LwhsP0Jg9x3YumeeCB0/gD3V1WSpQXersw2oQE3BCd7024
+      OavsjeKGN6IEQyaRY9gquVrV7jHz/W9j48HHOPWb76U4dpj8zteShY7qDRGiwkJSH4i5aqNC
+      bEQYVBVV8Jxb7PPY2T4i0MkMd8x3yYtM213BKWm5xLKVgHdatFJic6saudF5Yx1IuZMjMssC
+      Va6Zd47VAQsJsL7Mmfe+h9V772f+H/0i/iUvUS5sseTW1sW27ezSSmbfhDXgkkYMweQUd76K
+      a3/yJznx336d1vv+kKl3/hR+pkeWtblxrse1UwMqDL2stUMkkI44PcANJTpsYkQU7RULaEaU
+      q9s5T7iUIpb3nsefepZf/b9/kwcfeWLH12ZFhz0HD/Ky21/M4sIK/f4iG4sL0OnWrJTbCU19
+      p1ga9xtnyr8sceBAQQ+DStkZEwlcWhYMkEXpTwkRGysev2eKPX//Z8lm93Pq3/xH5Kv3Y8IA
+      ZxxeHAMbqGwMe1Ei8hDzZGNtrbdbVZ5Hz/Z51aEubzw6w76JjEfOrJHHsDgIDLxT8eug+XgZ
+      W1JKxGeGiKdNLiWiofxGCKw5T1l6BoPAalUSlpdY/ehHWfjEXzH9trdR/K034POCAksry4YI
+      y8vwUufGS6vEi771a6yNnkdCoJVty8z3v5Wp17+RE3/wftY+9hHaa/2INDN08xadVq4PsTEb
+      DyNbVxSbEi8oIDtgIgy1GRCo5GlmL6IP/NiTz/DRT3yaD3zkE6ysrvFHH/wY5xYubPv6VneO
+      Az34+iPHufGmF7F/xvC1Jxd58Y07r9zfSTY5OVlHIsOBBv1bQEfNIBZNYtjmvK8//GFkp05c
+      iKEVEU4uOGhntF70Yo78k1/ADYTHf/U/Uj7xIN4vU26sk1fRgcQzCI5gRm8iLdII5cDTskKv
+      VWBtzv5ewdKGR5xXGKBYlWOJc8cJlikRJGLNeA8zouijVpYxYXO6ktH1Oa7yyNIFVj78EZ75
+      f97DzJ33cM273kU2PaV6xzar4ZcjxWLZ9DVun9aO/8PlWtxngj9ihZYJFNN7uPbn/wHde27n
+      6f/+Hi584i/pL59jtdwglNpRqGy46EOnXt2D6ifbOCLpXNDithb6VQ0RFU3b0YHnr9nP5770
+      AFXluPGGw/ziz/8se+ZmdjgCw+EbX8zL77qDbpFx6OiLufvOl1LYFyyo+bazdrtNliU+quYT
+      OaGPqO9QY8wwZGKoHzuEIwYyCRRRBNsHwYUMsYbsrpcy/49/gfLMMsf/9X/Af/1hKkq8Ebx4
+      NsRRieCNxCjdgHNKAI8w086pPJxc3mC13+exhQ2u6WVYjIL4g5CbFNKG+JCJo5EmoYKbKoup
+      y6thfBbTvpTfFysrrH74Yzz5n3+d/Naj7Ps7P43f26OVmUgAP3KpYk/70pbPfDttpG2/dtqe
+      RJIDzYuzkOGNRQ7MceQf/H2mjx7jzL//T7iP/hlmeYFBxIfbuLlY5qr/Pw5EIgSyoL1wicAe
+      5xzeVTXwR/QGwr773e9+99izA06cPoOI8ij9wJtfx8ED+7Z76SXblkmc7zB7+umnWV1d5frr
+      rwc0HDq/sMB9X/4SnYkJ7n7lPRR5QcJCa81KRXmHAWlUCJT0cUvU8I28TtZSGoO5dj+zh67n
+      7Mf/nMVPf5qp6w9j9h+kxBJCOURNxQeFdy6Gbwrv29MRHjqzwePnN5jrGF60r0dm4momIQ4q
+      6KgfohX03Ngo9tX4nCUMHVqG00kueGQQkKXzLLz/fRz/9ffQfelt3PS//SL22oNU1iJZRhYi
+      Z1jddIltqXGrrmxtWPX7G5dRd9nstNvcp9H3KklUvIKbmWDm5hez/MgTnPnoR+m2LBM3HyPk
+      HSQ+nD1oL5nINhLPY1TJwXNmZZWHTq+xsNqnaz1PLazz5MIGwQ/otQxG9HPY0YHPLy5zz10v
+      5dYX38S+PbM1guhbse90Bz5x4gT9fp/rrruuvg7nFxa4794v0emoA+fRgUEhgmXwDJwnlSzS
+      +5ofuknTQt6T+zglmxk6h/YzfdMRzn7xiyx87C9odyeQ+XnKVoGVQBGMUvfgcHGbuc0xYujk
+      BUemWhyda3Og18HarJ4wCgyxzi72YzMxdeFqFH2lTuFRlJfHUVV9vO/Dc89z/D/9Oufe90H2
+      vf67uO4f/TzZkSOEIkdsHsf5UnUgTTnJFr+S2MMd+t/wBWU5uIgDX7xKXX/bdFo6Kw0YIeQZ
+      +ewUM7e9hMHzJzn3Rx+mf2GBztHDMNHS4QWv4BghwlrTc7hxFOdW1/jyyQ2O7pnAWMMXjm8w
+      27ZcM9PiyQsVwVXMTBRxqmkHu/7wPABTk7vCZFfKJicnt9cHJrZJh8Fynfl6FCChLB2GPPVV
+      k0ehM8IDcQwqZZxsO0tVFPi7buP6f/VuzvyH/8bxX/t3zD74MDPv+lnskcM6q2gqpHKAcjZr
+      t8oriMEkpg091pAOUmg4r7a8MrGY+vjRllE8E2fUgcVDUQmyGlj88pc49V/+G6snjnPtz/w0
+      cz/+w2xMT+rYodcqdXpYxM1tsmH1tv6NhDifPLRBOWDcHTy+pBTL5Zs9FcZiNQ1B0WpBsE6o
+      shx/5CDX/ONfoJg/zJn3/i5rDz/E4b/3D5l41atw7UBGmt2yGiIPD54APLs04Ka5nEMzHZY2
+      +hDWmWob5iZzJnLDV46vcv2ciqNdpI3kWFpaZ2qqB8DG4hIyPUVr5zft2g7W6XSA8Yis7YIS
+      a0zkTpa64ptu7GHOLOReEC+UCJVEelrJqYpp5OZZDv3Lf8rp3/ttTv3+B1n46lc5/M53MPWG
+      N7DamyUEiw0e2zJKEQt16KuPh3RwEjVwYagIpDKhFnVkSDiQCBQJAV96bGUglFTHn+T0e9/H
+      uQ99nIlrDnLTL/9Tevd8F950aImQ+aSxGFlAjGxGOEZr/NJDkLqLO5wnAAAgAElEQVTBPfIq
+      TUkuYrLpH4GxPrzZnOhDiXjcLggh68D+Nvv/55+jc9M8z//6b/HEu/81cz/wJvb/+A/BNTew
+      kefYUFGIRlQBqQEvrcyyNqjwVUkW++2FASrH2kapNaXo7BftAz/4hU/w1LLl4CQ8fqLPO3/2
+      7Re/GLu2rS0sLFz0NYLUDiMINlgsyqiRKrDBaCjm0ZzShMj7LBkObUOtWegAXbEMgHJ6L3Pv
+      +p+YevnLOf6f/zvPved9TM/fyLn5glYr47qpvG5fpRxTsdECQTi72ue5pQG9wjA/UxBsqkSJ
+      Ahs2dWd9FP3ylYNygDtziuWPfIxTf/xhZG2J+R96E9Pv+AnK+evotw158NiQNcYD9Ubdxi+3
+      rsjbTDPkO4XPjbeYNBThh7+vU4YxOGsfI6TMQ2XVmQ1C7qHKAqHbY/KN38fRm1/Emd/9Q079
+      yQdZ/sxfM/eD38fU970Bs28/Vd7CmAwTFCZpEI7NTfBXTy+y+OwSAwfTLcNDZ0t6ixXLg8Dd
+      h7pKy8NFHdhw5MYb+dpHP8H9zwt3v/YtfOdCMK6MVVW1iRd6aD4EKqckc82po4x4M4d63CBS
+      NQVVuSNE6UqjJHKgKu/e60osgSpAZSzS6iK338n1v3wDJyt4uN/iwOkTrMzt5/7lAa9ulZi9
+      s4RWFgtCuhQ9v7jO189scGQ6Y2Gt4vRqye3XdhCrbSEbQFw8vji0LFWJWV6kevwpzv/lp7nw
+      F58knD/H5Kvv4eA7fgxz281s5C0defQWEYeziY0z9UX12lxaxWTckimUg8FFV+EhlPLSazPN
+      dpag6LKQWkEIQQxV3sJfdwMH/9dfYO/3vJnTv/9eTv3Gb3DhA++n9z1vYPpNb6R1ww0w0QVj
+      CQKZhdffMM1Sv8IYmGhnbAxK1geOTpGRZzkuxLRl50N0nDyzxk/9vZ+nYwP3fvqvWeUYvUs+
+      xV3bbN1ul9OnT4/MAyerM7pIVdP8XYaAmMiMoYrTWV2ZjVlziO0ZgQGaQ2rubCMDpmootbIu
+      crDN088uc9tUSfehxylPPMMDL3klj/3X/0SxvMjMq17DxK23Yg/sJ3QKHlmoeOn+gr1THfqV
+      53NPL7O+EZjqZpgq4F0fXIXvryNLKwyeO8mF++9n+a+/yMoTj+OMZerVr+baH3grk7e+BN+d
+      oLIZRdAA3QtgMohFqhp+ubVe1bBxf9ka6/pEF7vDdhJMe/N29PcKVdtc3461K4LVmWttMWmj
+      LPVnTZZjxcJMm9Zr7+LwXTez/qWvcP5P/ozTH/w4Z/7kY0zdeCPTr7ibiZfdTnH4WmRigqyd
+      MZtZgskhCN08p8gsIQihKhWZ5auLOXDGXfe8ov7X3W947UUuxK5dzLrd7jZ9YCDNtzYhdzHZ
+      FVFiN4JRbivvMJkhy5Q+J4DikcUoPaqPo4hInGeNIXaWkYvRsFuE1e4kMz/wfXRWV/BnoXfs
+      Jlb+4I858el/R9VrIQf20Tl6FH7qf6FaWGX9858iHDhI6B4mnHye8tmnkKUlBmfPsXHyFOef
+      foL1U6cJZ5bJbJviRcc4+HPvYurul2GPHSW0uqomiMfG+WEX4sytVyCINcreaIZMepe8LobG
+      /9O7LoeRY+i4sXxYR0o7H8HofvX1IX5wYnV6yoiF7hzt734dB+68g71PPM7Kl77EuS/ey/Hf
+      /m3sf/8fcGAWc+01TB2+nnzPHoq9e5HpKWi3NEMYlLCyRv/CIhunT+8yclxtS1josQD7MGwR
+      bbYUrmVG0cyDqqTyjpYdqiEFYxTXLConmjDOqRRlRciMjbzMwrG5jAdOb7DStaz0hZm25cAP
+      /zDzr/8e+s89yfKTj7Lx9Ucpn3iaw099lQeP3c30zGHW6DFrKk79yr9l/WsPRuikpTvRpXvg
+      IL3XfBcTt97I5A03kl9ziNCZxucFxgYQHTQkZFrwisU27532k6NqQUgtKYaMnZfTeBy+PmCz
+      HW7z8ViNi/3i4pYOmvQQECQY0nSH73Qxt9zBzC13MPsTP0n53LNsfONRVr7+GBuPP8nypz7F
+      xtoaVTkgEDDtNnaig1tcinDcjHanu+vAV9vKsqyddMfZ4Pr20y/DKNWdxPDbeaVkCaKjfAqA
+      V6fIgqEKIfYdieqAUIaAwzHZs9ydW86sVOzvtpif7iDBwkSX1qFraL3yHuzA41bXcGur7Jls
+      c3L6MPMZ7D1/lv73vw3e/g6k10N6ExQzM8hkj1a7heQ5Xgw4wRtFb+mB27gy+RFmyNzo/LF3
+      nuBDVESM14lLdyEBJfZM1y9AUVwe/l4ItbbSJU3CNgpe+qaUC4/m5B5PhWBMTpZleuoi0GqR
+      3zpL/pJbmP7BCjYGVOcXqZaWqC5cYHWtz+PTB1lvT7J/cIHrymVst0t/cmrXga+2TUxMcO7c
+      OYAxzrspEGvcPalb6AORsRCC6DCCZBlVCAx8mjZSTV6ToFLR+ZUcPqKBEFqmw+yEZbbrCQnr
+      V3mURjzT4lfbMSh6DKa6WAnM93Rm2Oy9nolj19UO5zxU1pLlhsoIGVYJ3gjk3uPFxB5x1J5I
+      D6/GSlWYqOwQ4YPSOPMUZVyaCWnyEmAwGJBnrS3v3mlr+v7LW3lrQEbYuu0A+IjYGgqbgzeq
+      tB4qA5Lhc4vPCgZFQTG/n1bwfOnpda7pZcx0LI8tdMk7loM9y/3P93cd+Gpbr6clwLErr8Bm
+      buFUF3WI8k55jwbAEmU2lO/Zx4mVJDYNUNUqCtHhEaqgN5KximvW0FwITkf5tDCje9UU1JJZ
+      g4hjw7l4lxqCR5X9jI7WFZmpp6wChgqdDRbvCRFeGRqRQGIeIfY5BSI1jk4zhW0jk50tAU2a
+      zldVO0wjbbEITb2ctDmaT0TzYxwYpI6e4j8VaycZPniW+wMePbtO5QNH5wr2dXT8cKk/wAc4
+      ureD2Jw8s9z3/BotG5hsX2SYYdeuvC0uLgJjClg7WBABIzjvKSsFtKtsrjqCC8MhCIM6lAuR
+      kzlBV6NuUdIZAKOUPZJaVCA+tn+Ssp/eYThjKI3yIvvYfw5oPt3KC4q80IGDKOYU4r69C/Xs
+      7hAXLaPdGkn/GN7yIZaEm3+5rPw3VY7R/dvIXnE5G0jvv7hd2hHWr4g/6PUA8VAOHF98boXZ
+      tjA/afnKiQ3Orw+Q+GAsfaCs9EG30vd0MqGTGdYGfncFvtrW7/e37QNvZ2kAwMV2iDGGwmZ4
+      dCa3DrxFK50+TgdBXPEi8N1HgIJBKW3KKkAsFpn61Qx7zSEJcEXKnaDc0lYkimcLaR5RHxC6
+      iSTlKSKNivu3fOku2UIIPHN+lXNrFTNty/zk5eXA6VATUvVyfP+yLQROLfeZaQmH9nYj4YHw
+      5IUN9nQ7tPOCG2cLPvX0Mp1MGDh45XyHbitnz+rKrgNfbWu32/U88OY+8DhLVWQXKW2MMWSZ
+      bRRMDAk1LQQcnuAlrtIGaw3WWFzlCDVAROpVxkVnVmZKarIOD1TBR/YMj/hQi2mb4YENU9i4
+      3RB03LGIU0uSijmX/Lz61gddHj69zLm1iuumc55frriwUXHXfAsxlzaMM1J8esEfPELLCmtV
+      ouC1rJeBtjV1xHLj3ikOTvbpV45eK6NlCxDhpddM7jrw1bbp6ent+8C1DcM3dV5P5bUymsbq
+      Ah7vY40KENGwswqONHqYiQpoBa80NnVzJVK1mNhSqryqKVhrqLyu5NqWHfZC88xSkApR1L+H
+      TQWmMMxxCShJ/bhELcT/SeO9V8C8dzxxfsCbjvZotzpcO1PxZ4+eZ70s6bYu1YEv1YZgD9im
+      rnGRPYnA/l6H55b6fOrxCxRGKH3gu45MkkIaEaHbatNtQw0XFbC2uMIOHEru++KXqUzOzbe8
+      lHPPPMzppZI77rqLTnblPqRvZ7tw4cL2feDaGhTjQYtUCnyIBaUg+GBw0fFMXOV8rEHHEpTO
+      7ooWs1LejHh8MDpUTyAYo1+iAxBlaoFEIIUAudU2UBxwjCt+c53a9FOsVilj5SV+7ldspRMy
+      A/0q0G4pQX0sIbzw9k2cQ0BbgndeO8P5tXVKF9jTLShsni5m/Ywbt/kr6sBuY41zK+vcdPMN
+      dIs+T/Zb3H3rXr726Ele9pKDV3JX37a2sbGh/FNJVmWnp3YsUGEk4pwbJHE+6g6hK56gos9a
+      zfUxzJaa40rnfHXOaBAH/x2qJewToNclxcGhMFoKgeu2iqBY5RDoVxUrg4pekVFk2WiRCjbd
+      eKF5WqRFGhiOUNYv+ea9zRjD7fs7fP65VWbbG1zoe26eK2hdykTSN2Eych6Xdw51f8AIgmVP
+      b3ToMaUnI/iuxliWcIUd2LQnedUrXs7CySf4xlNd8qxLNjGJGSg3tItV0StBDPDtap1Op0Zj
+      jSO3q1fmWAyqvIsObGtiM6VYicN8EapnRGq5+CQZGtD3K4JL6VgdSjXtAsp86DXHtdFptdyj
+      7/doGF26gDOqCGGCYAicWV3nvhOrZJGb+q6DE+ztTgzv5m1MJDRuQhNfHmrWym99JRYOzvTo
+      tSwLayU37cnoZDIKT03XesetXMYeGw+iyz2HOh0h5t5Bo6cGinTkNWHTO6+oA1eDVY4/d5Kq
+      36e99zDnznyDh+63TB26ra5IOueu5C6/7Wxqaorjx4/vuPIOJ450ntagbBfWR6lQ72tWB7E6
+      bJ/kWAQiemk4i2tFaXKU41BXbIfXlTcEZcGM4md1JZno5EGno5wDZ4LOJvvAA6dWuetgm7mJ
+      DufWNrj/5Brfc4MS4G1zUs1v0Tzr/YqBC0zkWWRi/NZNEKY6E0y19UG0sbFxRbY7zgJKOPfN
+      Ft7G+XtAQTdJVzkVCevKfx3aXCIv9KVaVvSYn99HGQ4yOzPJ4T13sNJ3zE5PXMndfFvbyoqS
+      3F8sfK45o4yhEKsatKLA/Cr2fVNv1UcIZVp1jQiV85gYbxszFFPzqTglIDiEuLKSBsobRRIB
+      MZYqCBV6PM55jA9UPjDdLrA2Y67TYqNaU0I8G7auwqkSncLk+O2Z82s8dGYDkUAnM9w9P8lE
+      61ujixjZczwO56rtV9Rxf7i8lvGY9166M0vje/OtHgXtuLgDL2gdwmhnwRh15ivqwCLC5PRs
+      /e+i02WucyX38O1va2tr2/aBkwSnR0Eb3ntslmGjU7lYTQ6iHFEBVTJMxVxDwlhH/FVMV4xJ
+      ShCC8xU+zfkGpd4Z6XvqkdR3phXR9kvwiuKKK/10y/DIuTUOTXueudBn/4RRSRbdUqMyW58d
+      zdt1fVDy4Jl1XnOoS7fIeeTcGg+eWeGua/Md1AwvxTE2e5Tiqzdlkhd5+yW+tvm2cPmrsGz6
+      HurLrjUSTZ30BT5Oa3kf8FVVC6bvIrGusuV5TlVVdU+2aUlX1sUcVdUNBKWBg0GsNKdlTF+f
+      HtmBPAiFMYhYHdkTE+Va9IYsnaPyGqAnXmGCqVUQ/Sb9UX0IAEHIMLQlo20yCsl46cEe/Spw
+      7/MrVN7x0oM9sLZxv28uv9RnCQirg6rmnc6ynAO9gsW+rx8+YYctXK5dvOYSr+dIfn5pVhMM
+      ynA7l29x/wSsieJpaKqTBSFzUAShEEvLWFo2pzBK6r/bB77KNjc3x8mTJ2NVd/TDDgmD7CLL
+      o9Ger7I/Kje0loWHqFqJ/WGCDhkoQMNHXaKgWj+iyKgQQuRtVu5m64VKPJX3VOLBDnUU0tM9
+      IQpTSwkMwUBhLHfMZ5SuUmilVdqePD4c0rRVSPQ8m2y6nVN6OLG8wUwn57FzGxzsZqp7K7pj
+      2fLOrc4x/hXNss+4d47ZjjQqvHUxedMDdsu74rUyWqEPKYSpq1mjtq1rx5eLDIkcgpfRKn4j
+      ygLAa51k14Gvsi0vLwNK+JYWhtqPRWlXg/dkxmKN/tsRKIOvRxIsghjB++ggPq4yRqiqJK4b
+      c6fgqZzOEWe2sbzGGyQTnVEtY4hsG9XaEVGyhqUbS4zBmJzKK8pLo3mNAjRsT7ndVifObcYr
+      5id44NQa69U6hyYzju6dwMUJK0KINLU2vvPyVrahC21zEmPeUVfvRR1y6363SZg3l4u/GUul
+      g7Bpf2H0IbV5F7sOfJVtdXUVoM5Lm2G0C4HSOYo8CVmpA7oQVM2vBvknCpghx7bUkqTUeXBq
+      uKailRH0yd3I13T4QQtYabop/W4kIhzJZUFD+EjiZgUXPN7pnHE/eKw3MUw39aLUvP1FhNnu
+      BK+9oaWMGZGooIoTTyYxcY4JaetrNiZilXRSqWwWhm214fuHPyd/CcMEdIRUIVzMOWNhcFyU
+      sfXAx72/cUV986VjVvCRY9C/7zrwVbaiKOrw0jThQXHJ8BpLgYgOtgfXWE20CpmJpXSOpCZo
+      4iC89oX1w095n3fq1M5rfpXI0ZOwr+ZdQiYZpfdUzpHbbNiSah7fiKX3QxYMFiGIo8TU+GoJ
+      4I0qFSbOyuZtGYwAyvNUeWXiMMbU0UetxrJpt7pf2XFAwsjmG37TZqR+Htb/Jkqrpo9g8/vH
+      iZM1q/Y7OXECqgyDrZHH2ZifxxQ5x2x3t4h1lW12djaunJsvfXQqhhpJNbTRg4SAFZ0GSrw5
+      QrpR09zvMHTMxTSKHD7KiGrRajS3VE3gDOXWSmH5xeLBlCOqAiFkArm1FEa3kxQLSmAQvLah
+      CHEUMW4jBIILhMpjHBQmp2Vy8kiSbvw2i1bQaMVvd4whRSjjnUHz1fQA2HquybHHPQBiTa/h
+      zLFucSnhcyx0bV+sbqQ4l2i7K/BVtrW1NSC1HZp/iQ4ZhlKSibsq/kcRRb4GdXisT3LvHdJo
+      BxmR+jbwEm9mdDEzwzIIdZYYZ28Trc3YYuo291T9a5/2bSiM4IiE7kEBCYMYTtc958YgRG6H
+      t6GEZmuk8aAxw9ZUiAUcM+agAlJDGiWW9VMLbeR1cVvWDkPl5su2OGTKjeOlqWl//aWFzwmA
+      IZu2f+muOv7Fuw58lW1lZWWkD5wq0QEtGlmkHu0buOGgvhWLCQqgSM19K0lHLzpD0BB7uH1l
+      eTTE/mG9sg6dpxkqByA3SX+JHRfhzfdS/fCIxyNGMMEr1Q6egFVdJK+wzUwM4jdrKG13Q+tx
+      u+iYRqTmCLsUF7gUJxl2BMY9FIYrr/Me5xyZsVrNv4RtjxyLjK7W4+vVl267DnyVLcFJmwUs
+      Y4QizyHmo8YoNNJ5jzdSD9C74HC1q2gYnmCXEp01w9TqCmmVMmJAfKP8NDSN6obEcbU/bRO+
+      JtuaEid3CuADqaVsMFhj6Aeas49bisMjhakxpoQGkcTPGHKz3RrcOMYY5cgYzHm93TrHljEX
+      ZtSq6LzpdZsLcxe1MIwitlORuFzbdeCrbLOzs5w6dWokhAw+MNHt0ipa9QSRCwFvFAXVMroc
+      DoIDY7BBV9jMGgaVI8RVKcOoFGdoLJ8pb85MXWlO+4XRFRgYTtRIfNW299n4u71+a0gZcgyT
+      TYwVQgzjQ8Rrx/C9hmGLbOsYYnXiKr2nefOOfRg0z2knSw5Zr+lbX6/5uicEyKytz+GyLDQ6
+      B41db7/2X9x2HfgqWwLWe++x1mqF2DmWl5aYnprEKuBZC1dEPDKqwetjcchI5If2QYEcEgXQ
+      Ql1jJgXFw/+rNX27/l3zp5HwbjTc3mxDgWozXLkDm96j/8+DEFvO9UPEkfSTPMEpqb0RnT1u
+      1qxDPHBjDMYqHLSvuyUb45yXVFBqHGegLh0Oa8Ax3QgiURZVH6pGUmvs8t1ta1WbWuZb6pqI
+      bNt/Hwlb4sNj14Gvsi0vL4/MAwNakRZPf9DXDzOSw2VGyIS6vWPi+7KImHJOVzQrygEd25+1
+      JWWjVMVKLSY2O7Fs/bH+8w7FLNOIuUfxB2PyWt/I9WPunpZnHyvKznsMhtxYfZBBEoECTJST
+      gSDRoVBBsnrFD8NcNTFR5tbiqmpYZEiHF69BiOmDi4VBm4p46SWiu6+8J4hGOt/szJTUOx6a
+      BypXIUhc2be3eqVuXOtdB77K1qTTGTpxoMgLsiKniu2iQGo1Cc67mlEjj/DK0vl4wxMruxdv
+      QIyGpjsvU7LNS4btk+FE1E6bqot0Y6avtA1sIYiOSAaPCw7vtTpso0yMoKwjtaK9seAdrqqw
+      WaY0ukkRFSjRia3MaISzFQvdgCyGxiqvO2akCRyI+Gz9vKzR45VtHoA72bjLJKSugdSf4db3
+      NPOeFCdsTSN27SrY5hwY9AYrWgUrq2uU3mMhaiQN1RYQrU5bEZxT5UEkDurHJ/t299H4v4zC
+      EurVeuR3m98x/K7Sn2EEMLHl9SGwtNHnG2fXqHzg2Fybfb2Jxt/1PZmYCA0drqyJ/zoYo5hw
+      j4bR9X4MZWTqTGivdHTOq/i1jXqhWbZ1RjmMnI1eIRcClfN1JT5AhIhG5xWTlFG+pcpx0/Sz
+      tiMhPYRhsTJFSwKJq8zESCqEXSDHVbfBYFAjsSB+PiGwtLikN3S8OazRCrPzClGkcviqwrlq
+      pJCTVuSUjY5zwnFfQUytMRwMBAtY8AaCkbrnCSlXQ4ciZEgmP6hK+uUgkuJtXV/WBiWff26Z
+      ubbh2smMe0+ssbC6NjyueL7GQxagwFAYgzW6c+8VWjpwjooQqX80bcgQLc7FIQ0ax5oIEJQK
+      SLYQu4cAwTMKXRQTEW2usb3IfJJaX0Hq6vp213tH2/whgK7mPnJxx217PH3v6Ee9KCfg42ci
+      RrHxlQRKc4UH+nft4ra4uDiCtdWap1ZkjehqlMdBhco5DZPFkNucTDxV5ehXDptlmKDslEFM
+      7XCX05lM+aJPlef4OyuaWyrGV/+QJmpdSKgupdDLrcFiGNcWObG8wZ6O4eieKUSEvlviuaUN
+      5roTW2ZZU0VXEAVtiNGeq9f20UC0BpBFIIhByI2lH6VdkGEEkUUNhBraEh2/loaIe2p+DwSM
+      tZv60rHmYGKasllo/Eotw5tNTA1cKYMnOIfFUsRzHPiqUT68wuarDf7yzz9JGQKPfO0+PvvZ
+      L7BWfhM6FX9DzaShg0bcmRBDEsAaonAZ9dywNQHnKkoXqCoPzuvET+NpnvQWLtUkjvoNqoq+
+      cwx8YOACrtKHRFkpcYAjwTQDFS5ORWl+WdiCnHxbyGM7M6yXSu4DsFYGCrvNXd+onmVedLbZ
+      WlpZRm5MpBJy8UGiJx1EKGymq63EgpMofVATZl4OBjtfC6LwW1AkWT1xLUq9m4slS0XAK+m0
+      2xQtNK3QAqYK0hmch8Eg8pMhUR7nikurBJ54+GFM0aGslln3PV511/V845ETV3Y338Y2NzfX
+      qD4PP716IDwEZV5wDkIgN5ZQ6oBBymVbnTYuKh/oyjMMxy/1/qpXK2OxxmAJZBK0qluvMLp9
+      F4KGctHpbSSXt41UYJxdM9kmt8JfPHGeTz55loX1khtmJ0aij5GvOBhf/zXEKnvMgwmB4GMs
+      kF4Uy9DNqnaaQ07HlheJkTKG4NERpRE4NOGnKSrRPYX6/8M31t++iUU4HUP8SufS2JgWpzTa
+      KGykEiZQ2cBAFNxjEIpwhQf6V848wzeOLxDWlnj+9B4y28G0JrDVLitlsqqqhiJgm27+lBu7
+      mNdlYslQIbJqUII1yuiRoHwBapWxEKuT2zzRx5m2LoQsBvESInSz9gRlBkn8XMTQFR9V76Ow
+      GYL2pGW0YGaN5RXXTrOwtoHzgbmJFvmYgtK21ry3jcFmOVuG/CWKuMUqtxkDbyzyYstFqKeR
+      2LqqOqDyVY3dfiFiZdFeYWRYGfN3EotYEq0bduVDhMUOuMJV6Im5a/ne1+3nwfu+woG91/LQ
+      01/kvr8W9hx7ObuslGoXLlyof97cWklhm4v6g9YYJObA7VahFK9edXVVnhOqyqOz/HFluMSb
+      TUhtGWomiRBCLVCWNqP6Zqbu3Yao8BBCwHstgKWBCs1Rh7Q6IoK1GXsj3/Hlc0YNZ3olThpI
+      HSvrc6tm6US9sYiCbzSu7aAckDd5ocMQgGpCKtjFho0k/WQVQrXAN9/53d5qCGca29r2dbHe
+      YCHHxJltxZdX/gqLmxmb0elk3PGKl2PznLvufiX9KjDR+daYBv8m2Tgu6Ka5uOzoymDIrcU7
+      RxU1gU0AE4EcuupF6poanpdy63hTbBPhppXNB80pQwRL1DJndYquzmxSAcgYkoomISGVIp5o
+      m3O7PMeVxv+HHRSigzaj5xCUAKCKsLXk7Jv36RtCb819pJFMolMQK7zOa6/GpJnkF8QaacTm
+      y9PYp9SaVYINKdICi8GbF0idMMs1TMqKFtkLQ4j/bWuzs7OcOXNmUyVaLQCVRqaa98XwzWYG
+      EzxVVWFtygUDNrM6vxsH/00UyN7JXYb5t+Z5lQuUaCRuENqmefPH18YEM43bmahyCFAFveEV
+      5DAEVFwpazrddr5kUX5snxBrkc0jPdKSA4cxjwVh2NcOaB+Y4GpUVBjZ87cWSm8/Z924oJv/
+      HtMUH69/ajVlIoRdUrurb977etXcujLpuiixXWKR+NE2tZR0xjYvclylK19Sui+riizLYg95
+      dKvNnm6IP7gQGKAAfYJEqtIxK9WYf0os8ui8r8cYG4EZVz5fTDvf9FxB0EENbwAxVAKVd/Sd
+      p5XndeCb0G/jTiS10kIkDvTeU4jRFIWo6DD08m/aQtBqfPPhGBrTSSknTw/2YVpTV+ZiVFYz
+      bHPFeaF37eKWcuDxYWWE1ImC+omti3TjpOJflilEsAoeaw2DQYkYIctySqdSLCMhZGrzioaK
+      LmiRzOmBoEJoQibDlalpDdaY+h72qGpDFRFhYqTBgPFC2NB7mrsxoutkCFpR91ESFV+RmUzn
+      q1vbhYHDcYyAFlmNqHC5xJBdosh53Qi/pCPd/MLGsUdy/GYklK7skA1FU608V70pr2/UMF9i
+      iywez64D///IEqTDSIIMJmrRVGEdDoOXsZnfHwwwxkaJFer8eTQh1BVAHVmLPlrd1OF/GyAz
+      OkN80Zs0JMmXoUJEPMQrFmrusOv4PbXNIosJxKKTYI2l8oGB9/hQYRH66xtk3Sw6+3C104L6
+      cJACVInRpFVvdKff0nF776hcBQTyPMeYrNFXTqH+kM6oqqwKSdkAACAASURBVByDQanE/LHm
+      UXmPQxlLTVyldx34Ktvs7CynT5/eNMygFqChQhgrrbFqk2Um0r40nEQEH6AqS6y3uMjE4byH
+      GKrbWi0hsVzqKGKaYgKtPRlpev/weEZ/IMIpk4PEm14stgnwfyEXYnS191ADrEB0BDFopdaL
+      VZ3keCzeVYpzDq6uTpsYpQTAOY8Liqk2YkaHPhqyyvU1uJTTTP4f26fOOaw1ZFkWyQyb8Yxa
+      +n0IUBSq3VyWFd57sjyPkjkOHz/nILsr8FU3daqhVtHI30DZGH3jnhkdIapvOoMCLNqtVpyW
+      0RuyLMvY6tEnus7Q6v7SOKLeqCDxdRJMTd0TmylbjquZBpZBlSISHDI9EBrr1hW2oV5yqph7
+      71XyZcwx5hGZ5b3HxN65sSbmnPqqykXxMEMjbE3Q1IhNjhtMleoEV91aChtzxHGbzlU458nz
+      TFOfxqXVRX80uW4WN40xFEVOWVaUZYnEkDq1YsXs5sBX3c6dO7fjiJ0V6uJLChRHqFhIjq4T
+      CK5ycSXXedYizxVF5B1ZkeGDYnxD7H2miqxrlDQzC4klM3YqdD8ybFWZGCv7MIRWpijCiNQ9
+      5RfMhUUpd71A5TwSPNnIAN6wqpwHbYgNAgTXqDjH/FEfdiHyjsUcPgTVjQoBggIYibDMIdGf
+      nnmiA5awXckuOa/DuYo8L7A2RVAQYrV8cy6cVCzyIsdag4+qh0WRMxiUuKoiyy39stTVV+yu
+      A19taz5hxxayRnLJ+KtYNt4yT9tAdBljcbGA4yrNt4oQVBwNkAiwSJDNEKvZ3nvKiA5LhbO0
+      mrug+OPcKpzBE6gaTxITgRrS4NR6oawmAfReObfig2M7EESiHPIE8qJQV2/GvqL81SkHtcaQ
+      6yA2mqnqw+v/be/dgyzJjvO+X55Tdfs50/Pendmdfe/sY/YtLogHIUJ8QBJpSJTpoAlJYVuU
+      HWaEg45wyJb1DMLhUDiksEMK0Y6waYGhgGxKIgnREk3SJAUSBGEZILALYLHAvhe7Ozuz8+ie
+      7un3vVXnpP/Ic6rq9tyZ7R40m7PAzY3embl9b9WpupUnM7/M/LJO1s4pDQ2QU2exaUaOh87c
+      QliZ57px15XkFleISANSdT8bgrnNdd3+XgTK0lMPBmi0nmRV4/weK/Aey4EDB5ifn99GccP1
+      UZNcYOFdrnyyRoSYms+9OIrUZ+q1PV4Gb0Sst9j7AsEsq9rsUVSt3rZhykAJYp1BbdFInp6Q
+      XMmrQ7ptXclOlF5TztuJKZzGq0e2tABXKu1UZXNzg7IoO26+bUaqMXkzvhlwLtIpW/RCzF0R
+      iUe6jrZJqor1DY/aQNRKHVU1EfnbJlvXZnW998kVjsQYaJ1/C6+KoiDGyGBQMTFRWqtjYmIJ
+      oaZX9qw2fbcrscby7tK1miNHjHZQyfY12fL7vPO3SKkqSLR4tI7BHpx0qKYfVsEV3tZgSUfy
+      L6zSShCf3DyxdFNKqFDl1sb0Wde4l6QyR9Jwtmso5agXt52Wyflm+7d3rimtvPYntFHEqhqk
+      Crc0sC2hzlWscb5V3nwCl8NSAafp+xLDs7y4ZJ1TDfoIceKoQ5UsbwayLH1UFL7tMfaOoug1
+      LnkIMc22anPXg0HVTPPwRUEcVOaBiCPIGIXec1lcXASu4T5vQ6TJgYDZmZYexjuPxprJ0qxN
+      iJEoSpGsrGBxmQ04bIPdHOJJircFEnlemlc0QtFcQrxSGnjn7vMO0zKCcYQ1zsTVvmv3zQlt
+      TgSAZY86DYcrUuNHXwMqQtGk7Gg3wq0pJPL9kMZ7qeoadSOHrUCy7mXZNm5UVUVRlE0XWVEU
+      eN+mBVVJs5wddR2o65qi8FSVudS9XpGmcwgaI64ozCrv7DaO5duVHBddS671QLQu8PBnm4He
+      mml4SgNjEshUem9dYMm6FIVnUFt+MbtynUc2Df+2HplI6sxJuVIRwWPTB7MlQrb0Ie9QMbdz
+      B8zBzDnf3D55nW2jE6cLiaguGnKOT80i6aM5LnZKg1DbL0YfOyu7Lwqyw549jwzkZfe5a1lz
+      LBujUhQeEagqQ6hBk+tsWENRFNR11bjb1sWX0n5eqaqIUyMuGFPq7LHMzc2lRv0RLrS0f1z9
+      eNorDZK55Xe5N1i8uVp5QkO2KDl9pQplWWzJP5s121pxZfOZrAOKZIEKZwwcEpX55Q1eOr/M
+      xeX1ZoO4tqQkUO6DdXoVWHc96W4zeRrj9U1wHpHtKIvSUHvauujCpV7bwjc58GtTy7Xrb47v
+      jFBAjaDqqo/kTTp/x94XkHEDJwmoCs0GWlU1g0HdnMN7P7TZhzSkzqUUGap4HXNi7bmUZXnN
+      PHAr6WFp2NPyA9nlnuzGxcOlk01fbEZute3BDil9AQwxg7QcXdZXbK6zWlliOqaXTJ8Dr8yv
+      8vzFNeoY+PqFdV5fWNmGEuf1RXI/7HWuPieryJP9rvoZffS0fmn+HeqA78x98ipMOE/P2iBa
+      JRi9c169NqcEUYKzctYwdDYaV7y93vTZ5NabRY3JjTbQqtfrJaDL8Iq8AefaeZuTRcME6jRx
+      f117qWP5o5DLly9fNw/cylaQZtQTOwIE61gpnDbuW13XHWvgWkYPuspLUygSsVxxts4Om3bo
+      MUDr9cVNPnzHLNMTk2wMBvzeG8vcMVcN992OuirdyoZ59VV3ZwJHjeYG78BeD2dmUtFHsn5G
+      0dtuiRrz4PQtm+KIdWWXuQ6RKsYGedeE5o+4WlqvSRtrC8bpbQGKKWsOaSz2tc+5xI2WFbl9
+      JFqsYqzAeyx5R3036XaljDbUo5S3lVwU0IzxSGWbOabKhRt5PY0yOyWoMXFEYsMcWTRjQ1sQ
+      zaV2R9egsTpiVd3VpSfwmp5HQnsdKa7X1OmU3PZtabBmD9f+FTS5z4mEAEDsGp3QMFNKV39H
+      nid7RXYPSkncQzI09wKwwW4ScyXc8GYdo1Vl9Xplc946FePk9+X7Zd9LW/rZUPjGTGQ4RqH3
+      XPbv38/CwsJVbi/QuF5R1R6C5hexTfvkQLUTsA5btNblBbO2CmgaCJ4VNu/2XS/Ae2uKiNoW
+      99vIj0zTag9Y4R0n95d88ewqx2f7nFupuPdASeGvRZfTCdptN+n+pnE7u6+FhKJn9HdrJRpb
+      PrN15zArq81/UY1Pq0ixZRUD4raQwum1D9h47aqULpWeqlhteIzUoU5uOml8qksKTNo0W1e4
+      rgNlmSY3R/N3snudCYKbcti0lBgVFyOxDmnEC7tvgTXWvP7yC6zUJacfOsXyxbc5uzTg9IP3
+      tqMyvstlYsLYSa7lPlubn6bxmXnwVwJZJMV3+m6WLv2tc/ytO/xgMGjQ1BhTOWaM1ANzD8nU
+      NFHTQx6Sw2cW5tTRWeZWNljaqDl1uMet+6avia43YXzee/K/R7ToSfLfNc2Hstptz1DBxHUt
+      sa25JaMT1DkrvhDoOUfApl1Uar2/mVf7esGMUR0Bmvp61ZG7tSFtNk1hizTKqqmmWsQ1DQ0h
+      BKpKk5K3WIDxpSVPiGgsnGp5bKu0M9YbIRiIJ7scA6vCLSfv5fDy27z42lk2rlzmwZPTvPjm
+      IqfvOrSbp3rPyuXLl6/9y5R+0Bib9jhTYN8EdobDZOAlJxE7h6DT+N4R531jYUwvk1qmwoG6
+      TrMAUtE/6cGLKfcYQ/ugWVWQ57a5fdw2x8iNaKtIYkQfhq6GnU8gzSLqeADNlARt9gDt/Nm9
+      2K2riCT+qBhwqqnP1yx6nlVcOZuf1B3NMupqgkYGWDquEJfaL9PpE+m6lZ0WhhanuLWqKnq9
+      0kohazrWNw1ml9wmaldV9kqiCAGhHyq7zqCUhcepNbuoJhYSdhmFdr5g+dJbfPGrr3PrrT1m
+      po+x/9YThKXFBmHr7jjfjRIS5cvIhz5b2k5DvmLDzQZ1bT8hGLm6KHXmbB7yKXOHayQ9wqjk
+      fCWIF+oQG6rYoiwpyxLxzn6cMKgr6mDflUZz36tqYBVNwYoMMgvk9gpSkjUUU8RApGZ4uAli
+      4JW574m9tPBGFDB0FPtbBte62ta+r/190+urNNMacilmiCER4r2LUSeFEtE6nUrx+Ghots1R
+      lqSw2rjC0KaCcrqoKDJQFVL4YiBaXVsHWVF6wyqAjaqyKRgJt/AuT47IIZKdY1ctcF1tMHv4
+      Tr7ve2d46Y0l6s11rpxboTh4rKk++W5npdy3bx+XLl1qOnm6qSSztuZuWQzc+pwx1SirBuo0
+      sa+pR24K5hN4k1Hu9LOVh7mYMOuQh2SGylIXVQzUVWByctKYPdTKFmMwFLeLnufupu1WlOWA
+      IKoyCGbtJylb1NwZoFTH2JCWK9hYmXRjchFadjO3nKDVwpyj1WDXIWZlXX6ftKk2MPe3kBzX
+      knGwoe+lyCk06BD+mQWMEUpf4Ag2mkWy55SLMsw19t7R6xWE0DJvWFdUAU6oFaoQ2RwMCBrp
+      lSVCpFcUVraqMKhrmtXttgvtXMH5My+wESd49PQpVuff5q2litOnDuzmad7TMjU11ckDt6/n
+      VENuQSM6K2IHG+qdChdyPKzRHjzrGKqbh7cQh3O+ndoAhhx3wF+RPDysTTuBMTyKCFVdIZI6
+      bqKi1E1RgSb+q0ZxR5iu5iVp/5KBqtQv0cTz9rJR1JLC7rwHhRAbZQrSrtWn+C/5K40hlnSs
+      kLQqxGAjWLxNOWxDCOO39s4sZAgBKSQjiKnCSYa0uGWiai9MwcjnSRbae9TlQgtbi3OSSiJr
+      wKfYFYrEoCIJtAzRUn6DqkKjMjXZQ3Mfsfc4lDoaPlIURVNJtsu0siWnHn6s+ffBW05y8Jbd
+      PMN7X5o8sEGa6VXby1WsoTxqJIhAsM6YEOsUu9kDXiSeZvGWlzX3zkCfqEJdx+SW5rSGtvXO
+      YtQ5lUYKXxBjyvmGiAZFenZe78G4EBNw4sQ4qp3QcJ3nPPE1ZAjTTZfssiubGxJUk0WzvI5P
+      9b2q1lhvCi8EQkJmrYsn+5AupXF8UnARTZY+GEFdWVD3FaFOhRCSMAVHgSeK0K/r5GUo1AHv
+      iquDy45V1s731tSid612bN9Ta0CTB7NZBUIcJJKBwmq7Y2RQB0JUNFi55ERpM4173tt7QrC4
+      uKopxCeuajvROI20x2IFFW1KZojYXQSX+JIQh6apkxot7MjeZEhtcKQY1KUH35NbB7N1NM7m
+      KB1W/9yULpomHRpfkysKCu/QmKfgWQpEYyqyjxDFW+rF5yd2lPkdBpWyZxuTiXRemCAxU2gn
+      TYIVLQhC2bmGPG2i8r6p7zZDatcR03FCbAslYq2J7kdw4lFfGA0NNL3LqtbGZ/fPG8NIds8b
+      X3vrZXWxaru6OIwgNr8TbSdW5PAGtVGxVRhQpckPGgPqhMKXeC8QIjHWFE4pCtvQEaWukmvu
+      jdIoIwNjBd5jmZ2dZWFhoYnDuiIa8ERKV+AkEiQQBST2mlRGflijGriUCBgBix2NBVUatLV0
+      xRDy26SRneUvY210PFVVGZulmsXGYbljCjTWoBEnPsWfWS1HTyzQLX/RVDhhOd0E+uhwCEHu
+      9fVN8mxoj/BRKDxDFDhGA5veGhP7ZlRUUuuDGNXuoKopy4kmlSmC/T2FEiEESK6vS/RAmjeR
+      HIZ0/t99ZRQLdwYMwTbBuor0Ss+k7+GxuNwsvjNkXEBrTd5EmjvlhaiGGdR1DVEoyrLZ+HKM
+      NFbgPZbp6enGUmRRTcUKwOpmxaarrIJHrIPGESENy8yFUNli5PlImUe4zUy28V7hhrtWDKtO
+      1VZRCQFC6myRMDD/eaAUlRXXi88jT2vEG6maAiXhqsc3dF7IxQj2ekzX2Q7eNrczzYOKwRQ7
+      gjhpjiyA02Sqa4Yqpswit1dre5rNeIpqtLkK1FXN2ma/rRhLG53tUxZbivN4FC+wKalwBkmb
+      pqSRpprOmzCFIQShlYQxtv/WSNisKROhnabh7aIQnDniOFtDxBGjgWEBRx2tJqBwgtRVc0wx
+      UGCswHsti4uLKQbuumOmaN9agp/55B+wUuwDFykIBCsiTO+KiYQ8taxFpRDBi2dmZobV9TVC
+      crdz0zqkCqt8nuzYasQHi/2M98qAobKcoJzez8bKGkenC44dP8CFxSto7bjt2EHefOstVmql
+      70pGTwrVFoXS/KcSU57ZFQXqk5vehYbqYK2KZcHE1CTL6xu2SaFpA2utcr6S7jk1prAiBgoJ
+      kECyiHDPgR5nr9SUwEZ/E1Wj2lERos+xtKMnjkKVkJRTpfUGBMu9Wo62fc/IW0CAGIi18Uzj
+      xACpQc3s7CS3HD3M3MwEE5lMwBlDSKWwGYSltT7nFpZYGwTUWWOnS1t5zs9nGSvwHktVVSPy
+      wAYGrdSOf/fGMouFJwr4GIj0cOoahDXHPgHr6CnFyjPX3lqm369SfrZTqqgRcR32iAwYRUVC
+      ncYPgkpECk/pNhG3wVThePjeO3ju+QuceecS+2b282RxiH5xlNfnF3nr8jrBlQwPzWYIzBFA
+      QkTrBOR4j5bRJilAcnUTkBUjk0XJvn09VtZW2axqQ3SbDuAwFF93zoCkOJEY0Risy0gkWUJl
+      8ZbI8+cHHNg/w6BW1tY2CUFxrjDPJxqQ1kNxIVK7ynLnImljS/S74pvikMoJ0dE2jNk78k3H
+      RTHzGlsSQKeC+k3K8iyzpWf/RI/p3iQufd/rVc3yesVaf2Bfizhi4hWxe5A3srT5jy3w3sv0
+      9HSbBxbXWGOriHJ4CnyUxPQoBmZJW2rQNo+b5Z3bP836xhr9fk2UgoKW9NuMvCMSEhCWYGy1
+      9AcxtrGoAwqhwuPiJuoLzlxcYGF+hamJGe6+4zYuzc8TBhvcefxW5q+8yUZIuWDNaSFzL/Ma
+      0UQmrxbbSiFp1k/6NTltpJRlwb59M6ysLDMI0VJo2ZgnJd5q7iTaa01ZuAg4D+qIOR8VlaV1
+      O8aVtXVmZqeYmfWsrW4SFYKP4EGIVCGBWxGyMtp5A1GFJkARgdIZ9O1a76Ch+VHbXF0aOyOQ
+      CmUKgoO+CKEfWV3eQFi3jaxwxMJcaE05aQM7s50X2sRbeyPGCrzHsm/fPssDSwvGZJ9oX1Hz
+      fffNsio9RCwei52vrfG607M8MzmFxpr+wBG0hyZicklvbsBcdVe5nqEOuOCbpnD1Di0TGktS
+      Hh3gDkxz+21HcRI5c2aJybmS228R9g969LWtksr0O7lXTxE0KLFOHbcFVqaZV6A0CiqizMxM
+      0+/36R82YvamkyqPmBlR/2Nc1qllIR8rAWUxfS6EwIkZ4eJ6z5TKBWamZ9jc8AyqmtobvtD0
+      BQdFgv0rb4R2Wa0yqipBzAKrKM47vCsabEPVQwhISMqdkW0XCc6h6vBR8LWA1kSx1kTxuZXB
+      Uoq52yld7dCzkmWswHssi4uLkK1epxxRRLjroOdv/dSHKWZmzQ3rAFFZmq8zJpobbKeOkh/g
+      3EaY5iDFiAtmw5zzBu4kgCeqocGFs6ok84ZDctksFaJxgCNSq6PmMctBxhpxp9IDnICmHC92
+      uFtjyk0XTsidQcbNLCkvnF+11sXccOU7abbmaE3TgTF6kH4flbbJHUnNELmUMnkF6xuU01ME
+      jQ2ekK1ajIYruMQw6TAgziiEOl9cd/IEVnhhM4lD8/1ImtMUUs6sdNLeFxRpsTskKk6VSqBO
+      yLnPeX06m3vnW5cRDJhjBd5j6ff7jRc2JOkB3Ff0mHIeTcwXxsMhjbI3Cuy1ExI2TWhAy9sR
+      RdnUmuiM5VDEyvVCjDaO1M7CRKJVFcCpRzXBvZoqh6gZRIWiIFZVgyeJs8dHo/XcOueSFUkL
+      s6bipgrK1pvcwa4bnaK7vPam28q1oJVmlzilZhArYcyD21JxFi62SD3pfFfqNeakl0ir2qow
+      FaXu2exl771Zb02hyzDG2HgV+QosR6/0UxDcUO6qEeWXYqydrefj8LFluLSEvRJFGIRIHZVS
+      HIWA7wCcQ1hJV6eTjBV4j2VmZsY6ktTSJYApZ7M3R7OCItCAV4zQeNqnNP3KiRg4BSkUM0va
+      88YBXafGBFGaUkGzzA6J2Tu33SU2h81jQ5VQJQsmBeI9dUoz9Xo96qpGSluzJkMs6bpEJYUC
+      NLnsjj4CrXXLKHujakJ7PaQHWmw9ImKlntkL6Fjd7nyysuw1CphVMHsZTj2lOFxMOXAd/mzH
+      Beiso9UkpzZVsEhrc941g+nyAfI5o0v3X3z6ts2nKEtJTRH5XO1f8v1qXu9uLDpW4D2X2dlZ
+      +0u3ID89yTaZ0JmCNFYqmxM6Sqztx4YPsYWb2dxmcY46Wp9vrnwyJTCW/xRxduLyYihvbHOD
+      FU+Kz0IkVEYGUJZF9qGt7DFPMsAGlG9VCGkX116SSusWd6yzvTDsXUCeKSTp160pjznol/ZZ
+      B6GcmGgVkLxJJV3wLSe0hO49zgvWoX+2m6ml6Sx/DUVKCVkdpaHnuWNraDW57rJx4oUi0vBV
+      t/dg600aXlb++1iB91iuXLkCcHVDf/cBzwqV/z3C+tpzYY9ALifMj0rziIgkelirfc6xYn5M
+      vBgvcjcVNGpNkB4wYYiUvA7WcF7XIbm9KdZO8SoZZm7WNcIH7JrYLf/XoXfJ8MOb3tF1xbNW
+      uqGjQDUY0LuKqytb4ebodILcLWdPr9gOZjhCSC2PaWqC90ITkAO5Rrq9nTJ0+GYz0Q5J7igv
+      q3t1DSrZnGaswHst/X5/OA+cXUftAhfZwbu2dK1Ik71IyG5DEwsgxj4R8oaRtNthvE5epJmG
+      CCN0pPO6pGAzhBrxlkPNTQmCWWov0g4n717fltWnyPU615i2maTcI983pOFtHJ0tW5Zr9aC3
+      69t69doAas0xoOmQyjF6UViTR3M5jaPkOpVY7UEyYDe0vUjnc4y6T3Tc5i13YWyB914mJiau
+      4qIy5W0fslF2qisWKadZRdEeGFMmaSxhxIjPDLBSup6cdQSJzfStO0HVdQxAY9WdNVz0U9O9
+      hGi9sKlZwGEbwtb1NtJ1b0ddaCcWzgTp4tt5yTciUUcrsAKE4cvO8XOTeUvnDDESa/vOrHEk
+      bRPtnpve2tm8tl6jCLmUvNky0sC0HLvbxpsoGaJVmIG1JA71WKQNY8wLvcdy4MCBph8YSJbT
+      Che6KPO7SZ6RG0JIFsY+OwiBzbqycj9iw+vcmmv70kscLpf8tkcd+i9/oAGWxGJO9UZorkJL
+      Ih+xwoqtuiLDPyJYHbK77n7RLrljBmXET1diNB6prVKMpHwddf7snmbyAbucKrvLiUrIZw8j
+      Q+AjrG13he16U2y7JS2oqWosOqjF5i+384sdrvDNe/L3ktmvxxZ4j+XKlSvDOT612UXe28we
+      zQ+FdOHGq0VwNh0vh5rpWIiV/Ik4Y4fQnDdN5YBk5FmGkc+8nOasZufzKyGV9MVgFD8qyqT3
+      eIGgIY1kGX5gR4m5ptI0IVz1+27cLRncur6Dn+u+QwjNULCulL1rc1WPOqKi1ulUx9ShZNVt
+      jjxUjY4SamKWpClhveqba81ts2EObVJK4sLORHhW404aOO40EBDyPCoai73bpHYx8PYbr3Bp
+      uebhRx5i+fybnFuqeOThUxSjaFC+C2VjY6PjOlssFWNkenqGoiiGQI1rieQvk/aN+TEvfIFI
+      h3EjVfPkeE8kTfejEyd23dpmsogpmWIFH1pb104VB2h/DbmySPQ99OABimIS7wqCSxVF12gz
+      zIvthqRXX6cOv9j4sdfbzNI7vAFKDV1FktEg1uizg4FygQTyeZ/obDK1bfe+5zBomAurs/Bh
+      FzomnDl5L83LaEM1lSdgiI2HJMaKQdikvnIF+gF3+CDam2LCT+B11xU4Mn3gVu7ff5lXX3ub
+      zZVVHrxzhhffWOCRe47s5qneszI5OdnhQ7LtV1VZW1vj8OEjCeCC66vw9SWmlFH3GNlyeEmz
+      gLb46kP4a9KIOvejak3Eyhp7S5c5+wufYu2zv08xe4Dj/8lfZPJP/Ul0/z68Kr0bjFOH1tK9
+      P/a3673b4DBxuKsvC4C604a3LbE9r0GXHdL24V519u46tc2Bj96amjgXl/q6E/cYySvKM5dj
+      gIEXyn7Nym/8Npf+5acJi8vs+zM/xIm/9HE4dtyAtJ1d2fXFFQVlXOOFN5Y5ffp23ni9YPbI
+      HPHcBVQPt9C7v9YO/Z0vc3NznDt3bmTKIIQw8vXtSItgWqlkbGBU2yQEA0yK9JTn2uEuJgId
+      V07VZgKrFZaI85SqrH/5Wdb+5S9zYvkymz3PxU8OuO+xR4jT+1Lr2zXWvwPFTvta+nvHxbiO
+      OJeZNvKb23Xs9HkrXEEdajRGYyiBljpk61qTsmpqCcwKvdXTbiJXydhFmjqBJI8oldQmFhVB
+      6UVFLsyz8E9/mQPfeJZSa87+i0UOPvoosz94zCrsdnRl7yL15iovvbXAE4+fxktgdfVN5s8s
+      0Tt0G2NWSpPV1VWAIRRaRJiZmWZQVWkGTutGvps7vVViVOoY0+eG4Z6ed80ITCBR7Uiq0dU2
+      VVIHK1BQKJ1Rmvro8FVgbf4ysxsDCoTJULO+tIIOBhQqhFQ5NiLbsW0RSGh6DjPa33XvRbZm
+      IVPnpPrJUYmpbnvldlYgog3RvcZUFz3Spto5M62OS33OhM5+k6ytYjXPloZK0x69zZtKvVad
+      PLE0A9bj5gZxdZ1eULwGpvsV9eISPkaC+F1GoZ1j0gW+8fw3WFpXHrrvBPPVfh64fW5XT/Ne
+      lvX19av6gZ339Df7DAZ9tsJI1zU96SnWZHFVTXmDthhyLpssJZf4pbJN6YwdwRrUqxhtcLVG
+      vDh6RUHpHCUep466dMy+/3E2Hr6fy8U+rhSHmP3gB9AjB6ldIqdrKqeGf3YkyXlQroGKp2sN
+      GhnE0HCEWS1ze9fyT9nr7XgNTlyiim2/i+ZaOheVN8queqsoUSJRYnNf+3WgX9fWUCGOsijo
+      OZ/4L1MjRjpKEaGsjXyvd+QwM08+zkbvIJt+Dr3vPqYfOUXlhSLucgxc9GZ49IknO69Msf/w
+      bp7hvS9lWW7JAwsxBAaDAanIsnFtM6nF9Qt0tPmQcRWybAAAHDVJREFUpY6GCdeFSKmp4iof
+      PJ/BGW4Rgn1O1VgnvIhxNaVDB5TolEId7r4HuOfv/3cs/X9fodw/y8EPvZ96/1zqlFFrcs/r
+      y+faofZY+H719tVExGLdVIO6TmT0vgGdWsbPVgb9PmXR26YrYPFFHt+ptJiYtVgOvzUvzL6K
+      BGhJpvsxwkAjyO+AYmIew0hOwHwYp3gVdO4At/+1n2b5w9/LYH2du55+HHfXXTgpiX5cyLHn
+      cvDgQc6fP98oWVOdk9IweYBzehRGOm6NdH6VyxwNUbZPCwmIaboDBHU5OWQpi5AeMJe4p4vU
+      SJ/Lu2yLUTyKRI8wydR9DzN17wMEcQRxlMFRKFSJMTET+ORh3hoB3Z6zl2xsssKjgaAIDDS1
+      PWoO6NuIfiv0FepqZ5Bgx9QqUIfawCUZEUt3TybW3hiAEG1zFE1FM4VvY+Mh6321BGebZi8o
+      UpTE47dx8GO3EbwiUXAYXWl0YazAey1ra2sAV48ZlRzTKXWIVuwwBDNd6xE02LOOoRk0rYmE
+      WaBpE7Rco1mGWs0iRKPLMMVNoztyjNzdOLwKtQiDwtw7pw5NxRsApE3BqRHOD2tQ9od3Gs0P
+      X7WksCCKMIiBisRRrTQzfiUPxU4bUP6sL8ptYwnJ+A0hxiJiw8u8NEUcze/ouNdRqYOVraqk
+      aQ5pLKinMwpNUpUZmnqYWywEoFC7505i6ksWEEcRLdSJkgj5dtuFHsu7y+rqKnmsR3ajG6RS
+      jI2xxnZtSQ/o1S5oh20D261rtOmZzfVcTlJDeYonA1bh0wwOQyh8QZEU123hdIbWpolCgeJT
+      fBdc9hoU1DXMIR2aukRwno+yXeWV3JoztA4DgoQqufuguOTqo1YuWdV1UmKfBoZlhZEd7R35
+      GjLjh/NGtF7FACmtZIrdHjaPZI1qPda5ycElz8CmVGX2kNhsnoXkLqb2epv8O9J0KakPqArB
+      adOzHHBjBd5r6aWqoDwbqSsqxgahGbk0czqSTiarSYTOgK7W6kiKt0ShTnXTIc0kaibCp3g3
+      j/S043ZjZZNoC7Z2QieIesraKGWcmtseGyVVhh/HrQ7tu4lpblRzjzODRxBDcZutJ22Cklga
+      nfMEl3qe6wpXpJbMmON5be7x1g1xlKPetcB208TAMo22aaQPxdTcEGJMym5K5dUsMt56oUOi
+      5InJ+3Hp+2mrq7rrMbYOI7XL34FtjxO1rS+kdOBYgfdYDhw40MTAW0WTO+gTufi7pYRVrG62
+      IlUBxaRE+eFSS1tUKa2Ue3R7HYCqaVFrOuqvPk+7zXSocFLKV5sUjXZSVDt3lZtran5SnlQ8
+      2YbV0ZxOMJfUVDTR6lDjnKcUT5QBfR0gvocI9MOAQssEEFlBiqTKqVpDU15qlWu2/phccDtP
+      RJ0QItQ6gFgg6rEpF6ZYPg2YG7qVqX45hIQ1oAmBzvXUelXVWL59KsNofu5nVsmohK1/rMB7
+      LJubmwBX9wPbq7b70irvtVRBMX3N8Rbpgcz8TqJQ1ZWNoxSHF4tzzeLmyQXdGDwDXcPnyTEb
+      W9y89s/8/525qdeVBGCJN+AnoPSjEqiBYIwWrqAW8CHg8UZQT2UTIGrPahU5v7rMwuqAuLbC
+      2bWLrPUr6oQM9wrP9GSPmekJpieFY3M9js1Osq8smPLGD+3SBhJdgeAQDVRqCLiLNQU1hZ9E
+      Eim+5YRt/aa8SpXGtNqQNVNchxh5HtkNl62XT66FD2naYd5dxDd4GTBW4D2XlZWVa84Httip
+      8dlaipct78vkcXXa1bemXGJoqXMMoPJ455uHrHOgm04a3CttCAqW5qo90Vn/ceEcXhNa7jwD
+      jaxG5Z35dV58e4Fn3lzkpTff4cLCGqvrgXuP7OfMUo33kurNa0RhZmqS9Y0+axsDeqXn6IFJ
+      7r/jMI/fdYiHTh7m5KFpDk06JqjpqYPaESgJrrCN1uWq70yO07YEVjFSxTrN93UU3lFoImbv
+      fAfX3PPSjYgJ1FQRGzinpHJLi4PHCrzHkoc+j7LADtrJc2ousOuiVY2YexnUijay8XOqzc6d
+      ua7yWJVmpFHOld7Ekq8fErMmEY+RtkueVKCBoMK55YpnXr/E7379Df7wlTOsVsrtB3rcfnSO
+      991/G/fccpB7Dk3Qm5xlaqKwvlqnxKAM6sDSRp8LS31eu7DCK+fmefntd/j9599AQ+C+Ww/w
+      A0/eywcfPM5dh2boaZ3SaRHBG3+zC2n/dDZFMU1OjKqIs5E0Xiwudtre+8bqXgvfy1kE55r8
+      viZU0CmUqQprrMB7LIcOHeLixYsAKS84vBvncaGW45SrmCEakIc2FZEfh3burUsdLUmffYNb
+      N0qcH5CbUtLaItZVVauCBDwDpIZNP8HLSwN+77k3+Z0vvsK5S32O3zLHj37vKT54+iQPHJtj
+      dqLHTOHpAZsb60xPz+QkG3W0hJsvHCqzyB01IRykH+9idVN56/IaX3z5HT7/4gX+yW89z//x
+      28/xgUfv5M9+4B4eOjHLjG7ipaQfPNLpVgqVYQ7GE52GrpMIDhpFTVmHa7RTDt0DtVRU9LZR
+      Z6/EqIEDpfNjBd5r6ff7Q+2E3ax+Vtg6pj5U8c37ctGHwTnaKL5LsZa1oXnK5F5JmlEbpWW2
+      0BCNxC4huzejC51WbUO+SLzWUVHXQ/CcW1zn1595kX/9hVdZ6Uceu+84f/VH7ubpe+Y4OiX2
+      wEtEYoVojZMeCSjHifUxF5IAqTqkfLujoMSJMjktHJrax2Mn9vPxD57ipQtr/M4z3+Jzz73G
+      Z7/yCj/8/vv58fef4t5D03jnqOt0bw2iovAlRTONRZqea+MIS6HOuwKUbRU7CmXqUBtksgI1
+      VLpfjws59lxyQ3+2vtJAlg5NSGhGopEu8Zq2MSFWjIEYs4WNWTF3OcfNGbFUp9RBG7c9xmi0
+      OCPAk5tCUkgQXKAKigZQ3aQfCr7wyiX+9998ltcuXOZDD9/FX/rIozxy52GmnNKjSjlXQ6mj
+      2KCaFvXJkyOMflYEHIE6BGpxSFEknmwbWVoQOVIKh08e4ImTT/ET3/8A/+rzL/BrX3qJz371
+      LD/54Yf42FMnODpVEvFIESlKR8EEXl1DK5T3yIxub+eON+CgGN5s0zMEdZ6Q5jtrVGrGA773
+      XDLBei5f7EpOC5VpYHee/QNtaqVGqWK0YgaXyNhFrGsIaQgBcgFBqAKKnSvGbN2sOPImVF+b
+      BuEigYiGQF8rzqwqn/7c1/nMH36TE0cO8t//xz/M++4/wlzPMSmpA0knqNKm5BqqkZaFBNWr
+      HA5L6QiVamriT/ezKJOrGvFRmI3Cgwdn+JkffZyPfM89fOp3nufn/69/x5e+cZL//M89xUO3
+      zjArxpOlsUYpO7Xo345ki21/lomLS1Ekae5YgfdYDh48yMWLFzuN+218mntZCyd4ya+n+mW1
+      GbpGZyPExHBSYIBGmeqd80Oa/yy9pxCjw1Fv7Zym/q6x7V3Z7gN3Pe/723loozPLEoKyGQPf
+      vLjBz/3qs7xx9gr//vc9wp//vvu4ZW6CabyVdYqAGqrvNWKmb3iASjPpYWiF2rzuRVDxqdpT
+      ccFa/RBHEKs+KzQy45WHj0/wd3/iCT53/y188tef52/8k9/iZ37sfXz0sTvZ5z0uBpwLqFr4
+      cyP93W33VTc9l6rlUn44FZiPFXivpaqMHcLc51QzmIsqsAoeiUpITfRBDHGOqRijSQJKdpWl
+      bT6Qtq3NvuRUpRTTQHAREN/UDl/FcrTTmPga6Om3IzFGNkPFqsKXXrvEP/s3z7Ghm/z1v/y9
+      /MlTJ5gWxUuBczXOgUZvTROdLSl2FpaLIFqor7P4HKKojUIRnxQ+RDSoEfcBtTNcPyhMRmGm
+      LPkL33s/p04e5B/9q8/zP/3zz7Kw8jQff99D7J9wKDW+5SbasSSPv/l87o0eLqu1Z2fMSrnH
+      sry83Gn3G0agS4SyDviqQkJF0Jp+qNkMMY/xTSQbVmboRJrpBwzjYe1xNcXI6lINrcPh0Kgd
+      EG3LAbYloz67U+21umBrAYxomo1YR8cfPH+O/+FTn0N7NX/3P/oBPvrAcaYkoBLwEpFYQDTg
+      iQROWZybCV8798C1ZHPDK7R3OlILpYCTAKUxb0bVRG5gKacYHUU5AUWP0guPnTzAJ/7yD/A9
+      j93Nz//rZ/mFzzzH5TqiFC0ziLYg187uj1wFdGn7m/TfuBZ6zyWDV61FsC8ZVfSds7z0j3+O
+      uckppk/ewvRd91Lcepzy8BGYmrL2PbBSQJ86jSR3pySUU2KyLK55kNtxJameWVwqqA/Ghpkf
+      9+E95Y/+XqAEBkCJ00igZjl4fvv5s/yjX/4D7jxxC3/jP3ya+w9NG0NlooeVtAm1bZNbVbYj
+      amNOh37f8XhoQpXMSNJpDHEQo7Tc206MxyoGCgmUUnDHoQn++o+/j/91Yj+f+sw3iF74qR98
+      jAOFpKIcjzoSPLk9dcur1YZIb9SX0oZQuyqxHrA+iMxOT7K5tszyZuToobkb5nr6TpMcAxuq
+      3KZyVBUGfTZfeRm3sMLCYANCTdg/ycFTD3LwQx9m8rEnkUOH0dkJNDo8loN0KWlYO2PeyDnU
+      xudOfpY9FPnBlcb6eZ8UQLNV3uZ31ZqE1lps+/MW5wWXPhMDm8AXXr3A//bpL3DH4QP87Y+/
+      jweOHiSz4roUckhKubVliC2fdq7t7ixt2JJdpQv2y9ywYVkAbUIW7x3iMrlfasEUIYoQvaPU
+      Hscnevz0xx4j1jWf/n++ymyv5Cc+dIr9PQHvKEY48NcXSVS13dlKo2V3WSlDxQvPPcuS7OeD
+      j93Pc899gwMzBavhYe45NrObp3rPSkafuylgi3kEOXEHD/1XfxGPEFaX6Z85Q//5F1h95hne
+      /OLP4fbv5/APfISDP/IjTJy8g3q2AHH0AoQUB2b+p3Y6graKjJCzySIMtTLeeACcwJZk4Yem
+      6V1HFFCJSCwRAjU1Xz+3yf/8y19mZmqav/YfPM2pQ5MEaiQ6iIorpSlwGLVqxerCXbflSMRG
+      wYy8xGZqMYopZxWs2sl7G/wmzhJ3kgJTU3BT8kBCssuKW0T5qz/yOOtr6/zibz3LwYNz/OhT
+      x5nRdVSmkeiGpx6OuJM3IruqwOJLHjz9CF975W1CXGZm/0lOPTzHc89dQI/ePWalJA34JlvD
+      1EXk7JvdLBz9Ww4xNTXDFDD18Cn8D3+EaukKqy98nSu//ltc/tVfY+Gzn+OOP/9j7P9zH6U+
+      NEeQSaI4fEw171se8K0IbIZ0ElKyhaf5BnBoxdzUZhTh9iQCRSovPLMW+OS/eYaVtZqf/Ssf
+      5vTts2jhQCO1QKHtCNShQdeSNwNr7ADwokPbi/N+WHc76H8UU9z8bLqE2jc9utGc9IJEnIf1
+      addYT2/0EfVWm31iX81/9mNP8z9+ap1P/sbXuPf4fp6+xVF5wW+nvWyUvMtm+EcGYolMMKhW
+      qVaX0YmphpVya+7zu01GX7+kpgShcDAhgvcenZignphicPgIk+//fo79rb/J3f/gExy8527O
+      /sKneOtn/x587TkIGxBrBhpS1VWDX3bSEd0fac7beZp3ZIRly48dY2cPqKhDpOIKkU9/4Q2e
+      e+EMf+Vjj/L0fYcpixLUMYhm9WzTN+CmhXE6y04eRYiRikgtVoWmKEVRpuWZwuY/ayIDrajU
+      hpaXZWFpNwSJmn4EFz0SXQIDDfUvnOEQlQZCsEkYpQh3HJrmP/2x91H31/jkrz/L+c0SpUZ1
+      kDwETYBb98ZdfW8d0kT5V93njuyqNoXBOs8/9zxL8xc4v1hzcLrm2Rcv8sB9t+7mad7TcuDA
+      gQ4TR/uViCiFKj21yiGn5qZVqYIK8dQTs8ifeJrjf+e/5db/5qfpv/E65/7232Pt334WHaxT
+      SUA1IlEbRXYjSN7SGUf8tIDOjbnU1wKSIMcMzZaiisSKvot86a0lful3v8n3/4lT/OknbmfS
+      GwFcjI4ovun62YqjGMtFYtaMsakyU1XquqauayKRQV11gCql0kA/DhiEATEaGYAvvIUxtBH0
+      KMXJVyFijQZgabkQlaiOEuWR2w/x8R98lGdePsOnv/wOfc3tCO0daEOoG73fJrvqQvveNI8/
+      /f72haMHuGs3T/AdJG03UoswRa84UUo1kERDqqKSAnXKZNmjkIg/doTDH/v32HfHnbz5j/8h
+      Z/7+P+D40jLTH/0h9MBBBs5SKqUmvqXrGsb0sOaU9LafoxtwtduLx+LlyMXVwP/5m8+yb6Lk
+      Jz/6KAenCwonBPHEWFNoTHOj2tZKzfF2R3kzw0lm0wwprg0hUEf7MfDJGgFUE5GfFDbVQWnq
+      lq8aMp6vOKX+1MjFGpzfquIMpS4S8dWfft+9fOnVC/zS7z7HBx88xKNHp+m5vG65Btg3lADc
+      1t397vZn/xikiYFHPCGZnV9TE3toHGDF+dRl5AuceJSS+qFHuPPv/CxTj53m3P/y82z8289A
+      NbBG9GBtbiEhpqMlA1CpJntL7DjMybwT2fLpDtuHkQnYQzyQHl944RxfeekcP/GR09xzdBop
+      7Po1RJxCTzwT6lu2DzEFjinmzW17hS9SOal5L15SR5D3DKo+gxgYqE1rFPGUvkfPlZSIFc8o
+      Q6UXuuUqhr6lzv3MzBnBck0N++RcT/nJH3yUtY0VPv35F1lXDxIRiS29D52LYqst3t49Hyvw
+      H4NcL6UW1R7OOsYmrgPFO2na1gyDCvjC0bv9Ae74r/8m008+yrd+4Z/S/8IfIvUazhm/ltum
+      AmrqJb4RdR06DlsfwuEf1UDQAQHlndWKX/q957jntiN89KmTTBZQaEw56kghjiIrWPcESZpZ
+      Qs6UKub7112LCOXEZJr3q42HkWvFwVxma2RoFWLEyodeyK51kZB8BRsJGiOlq3EiPH7yAH/2
+      Aw/y219+nRfPXWEQzfqTtuat57jWfbyek/3HUsiRXZ7vRjly5AiDwYAQQsNMOTExyb333c++
+      /fsRgRBqMi1q/nGpHTCTvTlXUAhoEZFbj3L7f/kzuH/2z1l89iv0Tt8NhyaN9BwDYuJWl0zY
+      8h0MW4Nu/tTqTLbpMjdZJE152vSgJqRJidQaqFS4eHmFo7M9/swHTnNsnyG/Xl3qfSV1TMUO
+      Sp7WNkKb8/K085uYuq8mJycMEJIUTmhMxR3m5TgZntaYa6Zibut0mUz76me2SN5Fnb4XDYr3
+      ULqSksiPv/8+Fi8s8NY785y+bQ51maontmtNYU73fuUJF52E2Eh2FtE91qTtnC6EsCuppjyC
+      YzeQ791aU7/fZ2Ji4ts+zm4ea7eubTePlVsfd+NYN+P1VVXVdKZ9O7LnFni7C96Nyq2rx1R+
+      e7Ibx9mKPt9Mx9otGV/f3h1rzy3wdmQ0Y+ONHQd2bzO4mY6zm8e6WdcEN9d3t5vH2q3ruykV
+      eCxjGcv25CZCoZWNtWXmLy+hqlT9dRYWr9ig6h1KPdjk4sWLXLx4ic2qZnN9hcUrqze2Ko1c
+      nr/E+uYAjTUL8wsM6vjuH9wqMXB5/hKLV1ZRjSwuzLNZ1Te0JoD++iqbVSCGmoWFBavh3fGS
+      ai7PX+LK6jqosrq8xMra5g2tRzVweWGe1fVN0MiVxQXW+9UNHSuGivXNPgD9jTUuL63cMOhZ
+      9TdYWFy6oeeoEVXW19YSjpW/uxuZc62sLS9xeWkZVXvel5bXbgj172+scunSJfwnPvGJT9zA
+      53ddYr3Jl770NXy4woX1Cc6++jzV5jJL1SSH90/t6Fih6rO0tMzZ11+E6QO89tJLbF65SDV1
+      hP1TOwn7lW+9+DyrtSCu4OIbL7Pcrzhz7hInbj26oyL0wco88xfOIRP7WHnnDc6v9HnrzNuc
+      PHF8R9cGoGHAl37/N1ieuI3Vt19itT/gzPkFTtxyZEfH6a8tcf7yMmdffZFidpKXXj3Lxbff
+      4sjtJyl36NktXTzH/PI6b77+Go4+b19c4dxbZ7jlthP4HRwr1gO++dwzvDG/wcljczz7zFcY
+      rM6zXhzmwEy5s0UR+dozX6baWOHyoMeRuekdft7k8oW3+X9//w85/tD9zL/2TS6sVZx58wwn
+      Tty6Ixc4bKzw2tsXWDz3FnVR8Morb7C6eAE3c4TZyZ09l5fOv8P6xvrNYIGVjfU1+jV4KuYv
+      r7FvX6CcPMGDjzzExsLCjo61trqCFpOcvP04xewxjkwNOHTsbh585BRXzl/a9pEG/U3W1jc5
+      8/Y5lhcvcf7SZVZrxwMPPMCU1Gx3/9UYWF1ZZRDh0sIa5+cvc2m95tGHTjHV2xmaOehvsL7R
+      542XX+TOUw/hBNbV88ADD1LoYNvHiaFmZXWVcnof9eoim26acPkCdz38GKdPTnN+eftrCvWA
+      ldU1Dhy7jVvmJiin51hbWeP+Bx7k9kMFy9s26Mr62iqVOh56+BGmekIIK8zO3cnDT5xm+dz5
+      7S+qkTWKiVt58JGH6F++fAOfNzl060nuvf0WAObXax594H72TXt26vT4qf3cf9cJailwmxvc
+      ete9PHDvXSwvLe5wRcLBuVneOXf+5lDgpfmLLF4+j5u9naeefJBLZy9ThzXqzXVCsZNdNzJ/
+      /jxrmxXz597g0G13ULiS/mCdan0V7U1u+0jrK4tcunyFqX0HefKpp2F9iRhrqhAYhLDtG6eh
+      4vz582hvP0994ANsLi9QxMBmHQn1zlzMtSuLXFpc5ML8Am++9hrf+tbrhKq2kZb19l26WPc5
+      /84FBjU88MgTHJuqWK6FtdUNllcDUzvITNWb65y9MM+Vi2f41qU+Tzz2IKWH/qBifTPQ27Zh
+      iSxcOM/qRrsRiZQMqjXq9RVib2demEmPOqwT+hsEv1PrPVpcCPRDpBpUO24u0mqNr379ZR56
+      /EkO7ptgfX2Tfn8D53s7XIVSzhzk6e958uYBsTTWfPNrX2G9Uu5+8DE2Lr7O2cvrPPzo4+yf
+      2unNV9781hvcftfdeAIvf/PrLG3A408+wcQOU3gr82f5xutnOXbiTo5ORb756pvcescp7jx+
+      aEfH2Vy5zPMvvMq+Y7dz15FJvvb8Kxw8fgf337lzFxqgWr7A+Wof++MiL71+huN3P8jJYwd2
+      dIyVhXO8+PpZxE/wyKMP8tJzXyVMzPHUIw/seD3fevFrXFwe0Jue5aF7buMbz7/I1MFbefj+
+      O3Z0nHqwzvNf+xoLq30eeuQJNubf4tJKxRNPPcVksXPE9u3XXuDthTUeeuRx5qZvTInPv/Uq
+      L778JtNHT/Dovcd47vlXOXT8Du678/iOwqi1+TM889JZpnolp06f5p1Xv8lqXfDY44/S20mc
+      QeT1F7/BwsrmzaPAYxnLWHYuN4ELPZaxjOVGZazAYxnLe1jGCjyWsbyHZazAYxnLe1jGCjyW
+      70rp9wf85mf+gMHgxqrFbhYZK/BYviNFwzq/+Iu/wqC/zKd/9TcIW3ItK6tr/OZnPs+v/Nrv
+      vKeVeDyZYSzfkSJ+moeP9/gXv/J/88SHPtqUc/b7Az7/xWd59rkXqOuaL3316xw5NMcPf+SD
+      78nhA2MLPJbvWHn8w9/PxQvLnL7zcPNar1dSh8C33nqb6alJ/ouf+jgf/VMfek8qL4wt8Fi+
+      g0WKCY4dPdSStAODQUVdB/7Cj/4Q75y/yH1376xS7GaTcSXWWL6rpD8YEEJkotdj/vIitxw9
+      /O4fuollrMBjGct7WMYx8FjG8h6W/x8tkqaJ+Tzx+QAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
