@@ -1,4 +1,4 @@
 # NHL-API-Goal-Scraping
-This repository includes code scraping the nhl api (https://statsapi.web.nhl.com/api/v1/game/2020020034/feed/live) and plotting the shots directly in a notebook, as well as a way to download relevant season data into a csv.
-Below is an example of using a csv scraped from the 2018 season in Tableau, which was used to filter OT goals scored by the leafs:
-![image](https://user-images.githubusercontent.com/80990165/230173438-b54f32de-96aa-48f4-a0de-e968545f897d.png)
+This repository includes code scraping the nhl api (https://statsapi.web.nhl.com/api/v1/game/2020020034/feed/live), gather shot and player data from the entire season, finding the probability of a goal based on a shot location, creating an 'expected goals' metric, analyzing players shooting ability, and getting the top players from the league or a team for a wide range of stats.
+Below is a plot of all the shots and goals in the 2022/2023 season as of April 13th, 2023:
+![image](https://user-images.githubusercontent.com/80990165/231831287-f8377604-0c45-4d0c-b8ff-d045a1d2f090.png)
